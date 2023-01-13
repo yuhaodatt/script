@@ -68,7 +68,7 @@ Reanimate:MakeButton("前置(使用fe功能前请先点击)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Gelatekussy/GelatekHub/main/src/lib/Reanimate.lua"))()
 end)
 if Global.OldGui ~= true then Reanimate:MakeLine() end
-Reanimate:MakeToggle("Permanent Death", function(Bool)
+Reanimate:MakeToggle("保持死亡状态", function(Bool)
 	Global.GelatekHubConfig["Permanent Death"] = Bool
 end)
 Reanimate:MakeToggle("躯干fling", function(Bool)
