@@ -210,7 +210,7 @@ Title.Text = "Infinite Yield FE v" .. currentVersion
 
 do
 	local emoji = ({
-		["01 01"] = "”9½2",
+		[â€œ01 01â€] = â€œðŸŽ†â€
 		[(function(Year)
 			local A = math.floor(Year/100)
 			local B = math.floor((13+8*A)/25)
@@ -227,10 +227,10 @@ do
 				return ("04 %02d"):format(G-31)
 			end
 			return ("03 %02d"):format(G)
-		end)(tonumber(os.date"%Y"))] = "•0Ô4",
-		["10 31"] = "”9¼9",
-		["12 25"] = "”9½0",
-		["01 15"] = "”9Ë4"
+		end)(tonumber(os.date"%Y"))] = "ðŸ¥š",
+		["10 31"] = "ðŸŽƒ",
+		["12 25"] = "ðŸŽ„",
+		["01 15"] = "ðŸ”"
 	})[os.date("%m %d")]
 	if emoji then
 		Title.Text = ("%s %s %s"):format(emoji, Title.Text, emoji)
