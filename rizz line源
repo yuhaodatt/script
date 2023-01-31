@@ -2,7 +2,7 @@ function Chat(message)
     game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message , "All")
 end
 
-Rizz_Lines = loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/rizz%20line%20%E8%AF%B4%E7%9A%84%E8%AF%9D.txt"))()
+Rizz_Lines = loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/rizz%20line%20%E8%AF%B4%E7%9A%84%E8%AF%9D"))()
 
 local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/mikhailramlal/Rizzer/main/ui"))()
 
