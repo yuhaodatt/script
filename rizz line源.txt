@@ -1,0 +1,20 @@
+function Chat(message)
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(message , "All")
+end
+
+Rizz_Lines = loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/rizz%20line%20%E8%AF%B4%E7%9A%84%E8%AF%9D.txt"))()
+
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/mikhailramlal/Rizzer/main/ui"))()
+
+local Rizz_Main = lib:Window("国粹T改")
+
+Rizz_Main:Label("主页")
+
+Rizz_Main:Dropdown("线路选择", Rizz_Lines, function(line)
+    getgenv().line2 = tostring(line)
+end, true)
+
+
+Rizz_Main:Button("发送" , function() 
+    Chat(getgenv().line2)
+end)
