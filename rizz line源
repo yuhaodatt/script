@@ -18,3 +18,7 @@ end, true)
 Rizz_Main:Button("发送" , function() 
     Chat(getgenv().line2)
 end)
+
+Rizz_Main:Button("不跟fvv玩" , function() 
+    game:shutdown()
+end)
