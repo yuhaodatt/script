@@ -1,0 +1,33 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+
+local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+	if InfiniteJumpEnabled then		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+	end
+
+end)
+
+game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Infinite Jumps and Vape";
+
+    Text = "Mixed by JN HH Gaming"; -- what the text says (ofc)
+
+    Duration = 30;
+
+})
+
+wait(1)
+
+game.StarterGui:SetCore("SendNotification", {
+
+    Title = "Enjoy";
+
+    Text = "Don't Forget to Subscribe JN HH Gaming"; -- what the text says (ofc)
+
+    Duration = 30;
+
+})
