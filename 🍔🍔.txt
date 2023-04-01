@@ -1,0 +1,121 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Tong script",
+   LoadingTitle = "Tong script",
+   LoadingSubtitle = "by Tong#9966",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "Tong hub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "discord.gg/neVzBzKQzT",
+      RememberJoins = true
+   },
+   KeySystem = true,
+   KeySettings = {
+      Title = "Tong hub",
+      Subtitle = "密钥系统",
+      Note = "discord.gg/neVzBzKQzT",
+      FileName = "key",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = "114514"
+   }
+})
+local Tab = Window:CreateTab("主页", 4483362458)
+local Section = Tab:CreateSection("汉堡")
+local Button = Tab:CreateButton({
+Name = "汉堡1",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2057.154541015625, 604.9063110351562, 3877.931396484375)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "2",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2299.10693359375, 603.2507934570312, 4760.13720703125)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "3",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2070.4140625, 605.5360107421875, 3759.73046875)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "4",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1558.1480712890625, 605.352783203125, 4994.57568359375)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "5",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2132.072998046875, 603.2507934570312, 3108.132568359375)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "6",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2129.66748046875, 603.2507934570312, 4400.43896484375)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "6",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1721.2166748046875, 590.7898559570312, 4192.5556640625)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "7",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1729.6910400390625, 603.8753051757812, 320)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "8",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-772.357666015625, 603.2507934570312, 4231.62890625)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "9",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2320.544677734375, 603.2507934570312, 4928.09619140625)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "10",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2173.319580078125, 615.0349731445312, 5421.158203125)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "11",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1193.470947265625, 605.351318359375, 4938.8056640625)
+   end,
+})
+   local Button = Tab:CreateButton({
+   Name = "12",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1690.575927734375, 602.9998168945312, 3595.240966796875)
+   end,
+})  
+   local Button = Tab:CreateButton({
+   Name = "13",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1808.335693359375, 636.079345703125, 4143.27587890625)
+   end,
+})   
+   local Button = Tab:CreateButton({
+   Name = "14",
+   Callback = function()
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-803.445068359375, 603.2507934570312, 3293.388671875)
+   end,
+})   
+
+Rayfield:LoadConfiguration()
