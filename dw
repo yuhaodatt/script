@@ -7,12 +7,12 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "🤖 Ultra Hub",
    LoadingSubtitle = "S1",
    ConfigurationSaving = {
-      Enabled = false,
+      Enabled = ture,
       FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "Ultra Hub 1 "
    },
    Discord = {
-      Enabled = true,
+      Enabled = false,
       Invite = "https://discord.gg/ZAcNw4yQVR", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
       RememberJoins = false -- Set this to false to make them join the discord every time they load it up
    },
