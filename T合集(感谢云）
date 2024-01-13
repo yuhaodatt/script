@@ -58,6 +58,8 @@ if game.PlaceId == 1554960397 then
     Duration = 5, 
 })
 loadstring(game:HttpGet("https://astronomic.vercel.app"))()
+else
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/car%20dealer", true))()
 
 elseif game.PlaceId == 4566572536 then
 CoreGui:SetCore("SendNotification", {
