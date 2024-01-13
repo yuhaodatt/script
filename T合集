@@ -5,9 +5,9 @@ else
 elseif game.PlaceId == 4566572536 then
     loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
 else
-    loadstring(game:HttpGet("https://astronomic.vercel.app"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/antiafk"))()
 elseif game.PlaceId == 6911148748 then
     loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub_premium.lua'))()
 else
-    loadstring(game:HttpGet("https://astronomic.vercel.app"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/antiafk"))()
 end
