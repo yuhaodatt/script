@@ -86,14 +86,8 @@ loadstring(game:HttpGet('https://ppearl.vercel.app'))()
 end
 
 CoreGui:SetCore("SendNotification", {
-    Title = "麻烦圈钱狗",
-    Text = "快手他妈的视频付费云脚本！",
-    Duration = 5, 
-})
-
-CoreGui:SetCore("SendNotification", {
-    Title = "作者 小云~",
-    Text = "已启反挂机（反AFK)",
+    Title = "antiafk",
+    Text = "成功执行",
     Duration = 5, 
 })
 
