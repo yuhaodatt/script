@@ -13,7 +13,7 @@ notificationText.Size = UDim2.new(1, 0, 1, 0)--大小
 notificationText.Position = UDim2.new(0, 0, 0, 0)--位置
 notificationText.BackgroundColor3 = Color3.new(1, 1, 1)--背景颜色3
 notificationText.TextColor3 = Color3.new(0, 0, 0)--文本颜色3
-notificationText.Text = "执行成功，云V1.53"
+notificationText.Text = "TongScript"
 notificationText.Font = Enum.Font.SourceSansBold
 notificationText.FontSize = Enum.FontSize.Size24
 notificationText.TextScaled = true
@@ -37,8 +37,8 @@ animateNotification()
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "云脚本",
-    Text = "成功注入器 等待加载",
+    Title = "T",
+    Text = "successful",
     Duration = 5, 
 })
 print("Anti Afk On")
@@ -50,7 +50,7 @@ print("Anti Afk On")
 		end)
 wait(1)
 --服务器
-if game.PlaceId == 1554960397 then --极速传奇
+if game.PlaceId == 1554960397 then
 
    CoreGui:SetCore("SendNotification", {
     Title = "T",
@@ -59,44 +59,23 @@ if game.PlaceId == 1554960397 then --极速传奇
 })
 loadstring(game:HttpGet("https://astronomic.vercel.app"))()
 
-elseif game.PlaceId == 8908228901 then
-	--鲨2
+elseif game.PlaceId == 4566572536 then
 CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "成功支持鲨口生求2",
+    Title = "T",
+    Text = "vl",
     Duration = 5, 
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/%E9%B2%A8%E5%8F%A3%E7%94%9F%E6%B1%822.lua", true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
 
-elseif game.PlaceId == 6516141723 then
+elseif game.PlaceId == 6911148748 then
 	
 CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "成功支持Doors",
+    Title = "T",
+    Text = "cdid",
     Duration = 5, 
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Doors%20Script.lia", true))()
+loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub_premium.lua'))()
 
-elseif game.PlaceId == 155615604 then
-	
-loadstring(game:HttpGet("https://raw.githubusercontent.com/XiaoYunCN/Xiao-Yun-UWU/main/%E7%9B%91%E6%8E%A7.lua",true))()
-elseif game.PlaceId == 10023052234 then
-   CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "成功支持Evade",
-    
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/Evade.lua", true))() 
-})
-elseif game.PlaceId == 3956818381 then --忍者传奇
-   CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "成功支持忍者传奇",
-    Duration = 5, 
-}) loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/hope%20earnestly/Ninja%20Legend.lua", true))()
-
-elseif game.PlaceId == 1318971886 then --Break in (Stay)
-    loadstring(game:HttpGet("https://pastebin.com/raw/28Z4ExEn", true))()
-	
 elseif game.PlaceId == 189707 then 
    
  loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/6.lua", true))()
@@ -176,7 +155,7 @@ game.Players.ChildAdded:Connect(function(player)
       print ("Error")
     end
     end)
-    SendNotification("欢迎",""..game.Players.LocalPlayer.Name.." 欢迎使用云脚本",10)
+    SendNotification("欢迎",""..game.Players.LocalPlayer.Name.." WELCOME",10)
     game.Players.ChildRemoved:Connect(function(player)
         if not pcall (function()
         SendNotification("玩家离开",""..player.Name.." 离开了游戏",4.4 )
