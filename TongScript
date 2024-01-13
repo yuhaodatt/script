@@ -83,33 +83,7 @@ CoreGui:SetCore("SendNotification", {
     Duration = 5,
 })
 loadstring(game:HttpGet('https://ppearl.vercel.app'))()
-
-elseif game.PlaceId == 189707 then 
-   
- loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/6.lua", true))()
-
-elseif game.PlaceId == 537413528 then
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/4.lua", true))()
-
-elseif game.PlaceId == 3623096087 then --力量传奇
-CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "成功支持力量传奇",
-    Duration = 5, 
-}) loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/%E5%8A%9B%E9%87%8FV2.1.lua"))()
-
-
-elseif game.PlaceId == 1345139196  then 
-CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "成功支持寻宝模拟器",
-    Duration = 5, 
-})
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CloudX-ScriptsWane/ScriptsDache/main/%E5%AF%BB%E5%AE%9D%E6%A8%A1%E6%8B%9F%E5%99%A8.lua", true))()
-
-    end
+end
 
 CoreGui:SetCore("SendNotification", {
     Title = "麻烦圈钱狗",
