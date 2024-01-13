@@ -1,4 +1,4 @@
-notificationGui = Instance.new("ScreenGui")
+ notificationGui = Instance.new("ScreenGui")
 notificationGui.Enabled = true  
 notificationGui.IgnoreGuiInset = true 
 
@@ -48,32 +48,18 @@ print("Anti Afk On")
 		   wait(1)
 		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
-wait(1)
+wait(0.1)
 if game.PlaceId == 1554960397 then
- CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "成功支持极速传奇",
-    Duration = 5, 
-}) 
     loadstring(game:HttpGet("https://astronomic.vercel.app"))()
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/car%20dealer", true))()
 elseif game.PlaceId == 4566572536 then
- CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "成功支持极速传奇",
-    Duration = 5, 
-}) 
     loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/antiafk"))()
 elseif game.PlaceId == 6911148748 then
- CoreGui:SetCore("SendNotification", {
-    Title = "云",
-    Text = "成功支持极速传奇",
-    Duration = 5, 
-}) 
     loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub_premium.lua'))()
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/antiafk"))()
 end
+end)
