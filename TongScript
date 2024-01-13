@@ -78,7 +78,7 @@ loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub
 
 elseif game.PlaceId == 3351674303 then
 CoreGui:SetCore("SendNotification", {
-    Title = "T”，
+    Title = "T",
     Text = "DE",
     Duration = 5,
 })
