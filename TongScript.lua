@@ -1,4 +1,4 @@
- notificationGui = Instance.new("ScreenGui")
+notificationGui = Instance.new("ScreenGui")
 notificationGui.Enabled = true  
 notificationGui.IgnoreGuiInset = true 
 
