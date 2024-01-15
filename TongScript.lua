@@ -12,7 +12,7 @@ local notificationText = Instance.new("TextLabel")
 notificationText.Size = UDim2.new(1, 0, 1, 0)--大小
 notificationText.Position = UDim2.new(0, 0, 0, 0)--位置
 notificationText.BackgroundColor3 = Color3.new(51, 51, 153)--背景颜色3
-notificationText.TextColor3 = Color3.new(0, 0, 0)--文本颜色3
+notificationText.TextColor3 = Color3.new(51, 51, 153)--文本颜色3
 notificationText.Text = "TongScript"
 notificationText.Font = Enum.Font.SourceSansBold
 notificationText.FontSize = Enum.FontSize.Size24
@@ -53,16 +53,16 @@ wait(1)
 if game.PlaceId == 1554960397 then
 
    CoreGui:SetCore("SendNotification", {
-    Title = "T",
-    Text = "cdt",
+    Title = "游戏:CDT",
+    Text = "检测成功",
     Duration = 5, 
 })
 loadstring(game:HttpGet("https://astronomic.vercel.app"))()
 
 elseif game.PlaceId == 4566572536 then
 CoreGui:SetCore("SendNotification", {
-    Title = "T",
-    Text = "vl",
+    Title = "游戏:VL",
+    Text = "检测成功",
     Duration = 5, 
 })
 loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
@@ -70,16 +70,16 @@ loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
 elseif game.PlaceId == 6911148748 or game.PlaceId == 9233343468 or game.PlaceId == 9508940498 or game.PlaceId == 14005966837 then
 	
 CoreGui:SetCore("SendNotification", {
-    Title = "T",
-    Text = "cdid",
+    Title = "游戏:CDID",
+    Text = "检测成功",
     Duration = 5, 
 })
 loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub_premium.lua'))()
 
 elseif game.PlaceId == 3351674303 then
 CoreGui:SetCore("SendNotification", {
-    Title = "T",
-    Text = "DE",
+    Title = "游戏:DE",
+    Text = "检测成功",
     Duration = 5,
 })
 loadstring(game:HttpGet('https://ppearl.vercel.app'))()
