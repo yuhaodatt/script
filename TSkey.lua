@@ -3,7 +3,7 @@ if a=="tongguheren090325"then
 _G.bmd=true
 elseif a=="Chinarst3"then
 _G.bmd=true
-elseif a=="tongguheren0903253"
+elseif a=="tongguheren0903253"then
 _G.bmd=true
 end
 if _G.bmd==true then
