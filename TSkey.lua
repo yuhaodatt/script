@@ -7,12 +7,14 @@ elseif a=="tongguheren0903253"then
 _G.bmd=true
 end
 if _G.bmd==true then
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TongScript"))()
-CoreGui:SetCore("SendNotification", {
-     Title = "检测到白名单",
-     Text = "欢迎使用",
-     Duration = 5,
- })
+     print("Start loading script...")
+     local scriptCode = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TongScript.lua")
+     print("脚本加载成功!")
+     
+     print("Start executing script...")
+     loadstring(scriptCode)()
+     print("Script executed successfully!")
+     
      else
 game.Players.LocalPlayer:Kick("未检测到白名单")
 end
