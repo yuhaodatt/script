@@ -18,4 +18,3 @@ if _G.bmd==true then
      else
 game.Players.LocalPlayer:Kick("未检测到白名单")
 end
-
