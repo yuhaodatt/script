@@ -38,7 +38,7 @@ local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
     Title = "T",
-    Text = "successful",
+    Text = "检测到白名单",
     Duration = 5, 
 })
 print("Anti Afk On")
