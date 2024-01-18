@@ -8,6 +8,11 @@ _G.bmd=true
 end
 if _G.bmd==true then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TongScript"))()
+CoreGui:SetCore("SendNotification", {
+     Title = "检测到白名单",
+     Text = "欢迎使用",
+     Duration = 5,
+ })
      else
 game.Players.LocalPlayer:Kick("未检测到白名单")
 end
