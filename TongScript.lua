@@ -56,6 +56,7 @@ if game.PlaceId == 1554960397 then
     Title = "游戏:CDT",
     Text = "检测成功",
     Duration = 5, 
+    
 })
 loadstring(game:HttpGet("https://astronomic.vercel.app"))()
 

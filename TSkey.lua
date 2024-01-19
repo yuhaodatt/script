@@ -7,6 +7,8 @@ elseif a=="tongguheren0903253"then
 _G.bmd=true
 elseif a=="mrsamg57004"then
      _G.bmd=true
+elseif a=="h_h5622"then
+     _G.bmd=true
 end
 if _G.bmd==true then
      print("Start loading script...")
