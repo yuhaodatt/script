@@ -5,6 +5,13 @@ CoreGui:SetCore("SendNotification", {
     Icon ="rbxassetid://12053741096",
     Duration = 5, 
     Button1 = "1",
-        print("1")
     Button2 = "2",
+    Callback = script.ButtonClicked
 })
+script.ButtonClicked.OnInvoke = function(buttonText)
+    if buttonText == "1" then
+        print("1")
+    elseif buttonText == "2" then
+        print("2")
+    return
+    end
