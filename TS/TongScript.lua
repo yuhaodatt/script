@@ -157,6 +157,21 @@ StarterGui:SetCore("SendNotification", {
     Duration = 5,
 })
 loadstring(game:HttpGet('https://ppearl.vercel.app'))()
+
+elseif game.PlaceId ==  then
+    StarterGui:SetCore("SendNotification", {
+        Title = "游戏:CC2",
+        Text = "检测成功",
+        Duration = 10,
+        Button1 = "加载",
+        Callback = ButtonClicked
+    })
+
+    ButtonClicked.OnInvoke = function(buttonText)
+        if buttonText == "加载" then
+            print("1")
+        end
+    end
 end
 
 StarterGui:SetCore("SendNotification", {
@@ -165,6 +180,7 @@ StarterGui:SetCore("SendNotification", {
     Duration = 5, 
 })
 
+--未改完
 coroutine.wrap(CGSLH_fake_script)()
 local function VIEO_fake_script() 
 	local script = Instance.new('LocalScript', CNM)
