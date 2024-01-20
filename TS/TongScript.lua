@@ -158,7 +158,7 @@ StarterGui:SetCore("SendNotification", {
 })
 loadstring(game:HttpGet('https://ppearl.vercel.app'))()
 
-elseif game.PlaceId ==  then
+elseif game.PlaceId == 654732683 then
     StarterGui:SetCore("SendNotification", {
         Title = "游戏:CC2",
         Text = "检测成功",
