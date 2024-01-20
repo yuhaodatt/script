@@ -11,6 +11,8 @@ elseif a=="h_h5622"then
      _G.bmd=true
 elseif a =="ikun555555555555555"then
      _G.bmd=true
+elseif a =="lost_weih"then
+     _G.bmd=true
 end
 if _G.bmd==true then
      print("Start loading script...")

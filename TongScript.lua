@@ -5,13 +5,13 @@ notificationGui.IgnoreGuiInset = true
 local notificationFrame = Instance.new("Frame")
 notificationFrame.Size = UDim2.new(0, 200, 0, 50)--大小
 notificationFrame.Position = UDim2.new(0.5, -100, 1, -50) --位置
-notificationFrame.BackgroundColor3 = Color3.new(51, 51, 153)--背景颜色3
+notificationFrame.BackgroundColor3 = Color3.new(51/255, 51/255, 153/255)--背景颜色3
 notificationFrame.Parent = notificationGui
 
 local notificationText = Instance.new("TextLabel")
 notificationText.Size = UDim2.new(1, 0, 1, 0)--大小
 notificationText.Position = UDim2.new(0, 0, 0, 0)--位置
-notificationText.BackgroundColor3 = Color3.new(51, 51, 153)--背景颜色3
+notificationText.BackgroundColor3 = Color3.new(51/255, 51/255, 153/255)--背景颜色3
 notificationText.TextColor3 = Color3.new(0, 0, 0)--文本颜色3
 notificationText.Text = "TongScript"
 notificationText.Font = Enum.Font.SourceSansBold
@@ -34,34 +34,60 @@ end
 notificationGui.Parent = game.Players.LocalPlayer.PlayerGui
 animateNotification()
 
-local CoreGui = game:GetService("StarterGui")
+local StarterGui = game:GetService("StarterGui")
+local ButtonClicked = Instance.new("BindableFunction")
+ButtonClicked.Name = "ButtonClicked"
+ButtonClicked.Parent = script.Parent
 
-CoreGui:SetCore("SendNotification", {
+StarterGui:SetCore("SendNotification", {
     Title = "T",
     Text = "白名单检测成功",
     Duration = 5, 
 })
 print("Anti Afk On")
-		local vu = game:GetService("VirtualUser")
-		game:GetService("Players").LocalPlayer.Idled:connect(function()
-		   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		   wait(1)
-		   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-		end)
-wait(1)
---服务器
-if game.PlaceId == 1554960397 then
 
-   CoreGui:SetCore("SendNotification", {
-    Title = "游戏:CDT",
-    Text = "检测成功",
-    Duration = 5, 
-    
-})
-loadstring(game:HttpGet("https://astronomic.vercel.app"))()
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:Connect(function()
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+wait(1)
+
+-- 服务器
+if game.PlaceId == 1554960397 then
+    StarterGui:SetCore("SendNotification", {
+        Title = "游戏:CDT",
+        Text = "检测成功",
+        Duration = 10, 
+        Button1 = "脚本1",
+        Button2 = "下一个",
+        Callback = ButtonClicked
+    })
+
+    ButtonClicked.OnInvoke = function(buttonText)
+        if buttonText == "脚本1" then
+            loadstring(game:HttpGet("https://astronomic.vercel.app"))()
+        elseif buttonText == "下一个" then
+            StarterGui:SetCore("SendNotification", {
+                Title = "游戏:CDT",
+                Text = "脚本2",
+                Duration = 10,
+                Button1 = "继续",
+                Callback = ButtonClicked
+            })
+
+            ButtonClicked.OnInvoke = function(innerButtonText)
+                if innerButtonText == "继续" then
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/car%20dealer", true))()
+                end
+            end
+        end
+    end
 
 elseif game.PlaceId == 4566572536 then
-CoreGui:SetCore("SendNotification", {
+StarterGui:SetCore("SendNotification", {
     Title = "游戏:VL",
     Text = "检测成功",
     Duration = 5, 
@@ -70,7 +96,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
 
 elseif game.PlaceId == 6911148748 or game.PlaceId == 9233343468 or game.PlaceId == 9508940498 or game.PlaceId == 14005966837 then
 	
-CoreGui:SetCore("SendNotification", {
+StarterGui:SetCore("SendNotification", {
     Title = "游戏:CDID",
     Text = "检测成功",
     Duration = 5, 
@@ -78,7 +104,7 @@ CoreGui:SetCore("SendNotification", {
 loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub_premium.lua'))()
 
 elseif game.PlaceId == 3351674303 then
-CoreGui:SetCore("SendNotification", {
+StarterGui:SetCore("SendNotification", {
     Title = "游戏:DE",
     Text = "检测成功",
     Duration = 5,
@@ -86,7 +112,7 @@ CoreGui:SetCore("SendNotification", {
 loadstring(game:HttpGet('https://ppearl.vercel.app'))()
 end
 
-CoreGui:SetCore("SendNotification", {
+StarterGui:SetCore("SendNotification", {
     Title = "antiafk",
     Text = "成功执行",
     Duration = 5, 
@@ -134,3 +160,4 @@ game.Players.ChildAdded:Connect(function(player)
           print ("Error")
         end
         end)
+        
