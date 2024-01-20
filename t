@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TSkey.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/TSkey.lua"))()
