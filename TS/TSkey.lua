@@ -16,7 +16,7 @@ elseif a =="lost_weih"then
 end
 if _G.bmd==true then
      print("Start loading script...")
-     local scriptCode = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TongScript.lua")
+     local scriptCode = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/TongScript.lua")
      print("脚本加载成功!")
      
      print("Start executing script...")
