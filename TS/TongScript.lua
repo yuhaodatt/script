@@ -169,7 +169,7 @@ elseif game.PlaceId == 654732683 then
 
     ButtonClicked.OnInvoke = function(buttonText)
         if buttonText == "加载" then
-            print("1")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/cc2.lua"))()
         end
     end
 end

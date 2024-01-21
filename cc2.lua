@@ -14,6 +14,17 @@ local guiScript = getsenv(lp.PlayerGui:WaitForChild("GUIs"))
 local openFunc = guiScript["OpenDealership"]
 local spawnFunc = guiScript["SpawnButton"]
 
+--开关
+local ui = Instance.new("ScreenGui")
+ui.Name = "ScriptControlUI"
+ui.Parent = lp.PlayerGui
+
+local button = Instance.new("TextButton")
+button.Text = "Start"
+button.Size = UDim2.new(0, 200, 0, 50)
+button.Position = UDim2.new(0.5, -100, 0, 10)
+button.Parent = ui
+
 -- functions
 local function getCurrentCar()
    local car = carCollection:FindFirstChild(lp.Name)
@@ -74,13 +85,20 @@ local function destroyCar()
 end
 
 -- main
-while task.wait() do
-   local character = getCharacter()
+local isScriptRunning = false
+button.MouseButton1Click:Connect(function()
+    isScriptRunning = not isScriptRunning
+    button.Text = isScriptRunning and "Stop" or "Start"
+end)
+while runs.RenderStepped:Wait() do
+    if isScriptRunning then
+        local character = getCharacter()
 
-   if not character then return end
+        if not character then break end
 
-   if canSpawn() then
-       spawnBestCar()
-       destroyCar()
-   end
+        if canSpawn() then
+            spawnBestCar()
+            destroyCar()
+        end
+    end
 end
