@@ -19,6 +19,8 @@ elseif a =="lpo95456456"then
      _G.bmd=true
 elseif a =="China_xiaoju"then
      _G.bmd=true
+elseif a =="Tongdscsh"then
+     _G.bmd=true
 end
 if _G.bmd==true then
      print("Start loading script...")
