@@ -17,7 +17,7 @@ elseif a =="DINGyj27"then
      _G.bmd=true
 elseif a =="lpo95456456"then
      _G.bmd=true
-elseif a =="用户名"then
+elseif a =="China_xiaoju"then
      _G.bmd=true
 end
 if _G.bmd==true then
