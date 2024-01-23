@@ -1,10 +1,10 @@
 local a=tostring(game.Players.LocalPlayer.Character);
 if a=="tongguheren090325"then
-_G.bmd=true
+     _G.bmd=true
 elseif a=="Chinarst3"then
-_G.bmd=true
+     _G.bmd=true
 elseif a=="tongguheren0903253"then
-_G.bmd=true
+     _G.bmd=true
 elseif a=="mrsamg57004"then
      _G.bmd=true
 elseif a=="h_h5622"then
@@ -25,13 +25,13 @@ elseif a =="gtddfgfft"then
      _G.bmd=true
 end
 if _G.bmd==true then
-     print("Start loading script...")
+     print("开始加载脚本...")
      local scriptCode = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/TongScript.lua")
      print("脚本加载成功!")
      
-     print("Start executing script...")
+     print("开始注入脚本...")
      loadstring(scriptCode)()
-     print("Script executed successfully!")
+     print("脚本注入成功!")
      
      else
 game.Players.LocalPlayer:Kick("未检测到白名单")

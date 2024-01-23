@@ -21,10 +21,6 @@ local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 local window = DrRayLibrary:Load("DrRay", "Default")
 local tab = DrRayLibrary.newTab("车辆出售", "")
 
-tab.newButton("button", "dec", function()
-    print('Hello!')
-end)
-
 tab.newToggle("自动卖车", "", false, function(state)
     getfenv().Customer = (state and true or false)
         while getfenv().Customer do
@@ -182,6 +178,9 @@ tab.newToggle("自动送车", "", false, function(state)
         end
 end)
 
+
+
+
 local tab = DrRayLibrary.newTab("经销店", "")
 
 tab.newToggle("自动建店", "", false, function(state)
@@ -228,17 +227,4 @@ tab.newToggle("拦截弹窗", "", false, function(state)
     elseif getfenv().annoy == false then
         getfenv().fun:Disconnect()
     end
-end)
-
-tab.newInput("Input", "Prints your input.", function(text)
-    print("Entered text: " .. text)
-end)
-tab.newDropdown("Dropdown", "Select one of these options!", {"water", "dog", "air", "bb", "airplane", "wohhho", "yeay", "delete"}, function(selectedOption)
-    print(selectedOption)
-end)
-tab.newKeybind("Input Key", "Press the key to start; it will be printed out.", function(key)
-    print(key)
-end)
-tab.newSlider("Slider", "Epic slider", 1000, false, function(num)
-    print(num)
 end)
