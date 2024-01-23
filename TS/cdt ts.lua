@@ -21,7 +21,7 @@ local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 local window = DrRayLibrary:Load("TongScript-CDT", "rbxassetid://16042583196")
 local tab = DrRayLibrary.newTab("出售车辆", "rbxassetid://16084878908")
 
-tab.newToggle("自动卖车", "rbxassetid://16084730073", false, function(state)
+tab.newToggle("自动卖车", "", false, function(state)
     getfenv().Customer = (state and true or false)
         while getfenv().Customer do
             task.wait()
@@ -106,7 +106,7 @@ tab.newToggle("自动卖车", "rbxassetid://16084730073", false, function(state)
         end
 end)
 
-tab.newToggle("自动送车", "rbxassetid://16084903689", false, function(state)
+tab.newToggle("自动送车", "", false, function(state)
     getfenv().deliver = (state and true or false)
         spawn(
             function()
@@ -183,7 +183,7 @@ end)
 
 local tab = DrRayLibrary.newTab("经销店", "rbxassetid://16084916733")
 
-tab.newToggle("自动建店", "rbxassetid://16084936359", false, function(state)
+tab.newToggle("自动建店", "", false, function(state)
     getfenv().buyer = (state and true or false)
         while getfenv().buyer do
             task.wait()
@@ -212,7 +212,7 @@ end)
 
 local tab = DrRayLibrary.newTab("其他", "rbxassetid://16084948648")
 
-tab.newToggle("拦截弹窗", "694828233", false, function(state)
+tab.newToggle("拦截弹窗", "", false, function(state)
     getfenv().annoy = (state and true or false)
     if getfenv().annoy == true then
         -- annoying popup remover
