@@ -19,7 +19,7 @@ mt.__namecall =
 
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
 local window = DrRayLibrary:Load("TongScript-CDT", "Default")
-local tab = DrRayLibrary.newTab("车辆出售", "")
+local tab = DrRayLibrary.newTab("车辆出售", "rbxassetid://16083820733")
 
 tab.newToggle("自动卖车", "", false, function(state)
     getfenv().Customer = (state and true or false)
