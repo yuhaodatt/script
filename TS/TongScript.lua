@@ -127,7 +127,7 @@ if game.PlaceId == 1554960397 then
 
             ButtonClicked.OnInvoke = function(innerButtonText)
                 if innerButtonText == "继续" then
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8642/science/main/car%20dealer", true))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/cdt%20ts.lua", true))()
                 end
             end
         end
