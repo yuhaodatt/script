@@ -175,7 +175,7 @@ elseif game.PlaceId == 654732683 then
 end
 
 elseif game.PlaceId == 10704789056 then
-    StarterGui:SetCore("SendNotification",{
+    StarterGui:SetCore("SendNotification", {
         Title = "游戏:DW",
         Text = "检测成功",
         Duration = 5,
