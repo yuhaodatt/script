@@ -33,6 +33,7 @@ if _G.bmd==true then
      print("开始注入脚本...")
      loadstring(scriptCode)()
      print("脚本注入成功!")
+     wait(0.5)
      local date = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/更新日志.lua")
      loadstring(date)()
      
