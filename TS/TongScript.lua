@@ -174,6 +174,14 @@ elseif game.PlaceId == 654732683 then
     end
 end
 
+elseif game.PlaceId == 10704789056 then
+    StarterGui:SetCore("SendNotification",{
+        Title = "游戏:DW",
+        Text = "检测成功",
+        Duration = 5,
+    })
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/dw%20ts.lua"))()
+
 StarterGui:SetCore("SendNotification", {
     Title = "antiafk",
     Text = "成功执行",
