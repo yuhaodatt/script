@@ -30,10 +30,11 @@ if _G.bmd==true then
      print("开始加载脚本...")
      local scriptCode = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/TongScript.lua")
      print("脚本加载成功!")
-     
      print("开始注入脚本...")
      loadstring(scriptCode)()
      print("脚本注入成功!")
+     local date = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/更新日志.lua")
+     loadstring(date)()
      
      else
 game.Players.LocalPlayer:Kick("未检测到白名单")
