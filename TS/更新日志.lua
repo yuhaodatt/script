@@ -59,4 +59,3 @@ local tweenGoalIn = {
 }
 local tweenIn = TweenService:Create(containerFrame, tweenInfoIn, tweenGoalIn)
 tweenIn:Play()
-
