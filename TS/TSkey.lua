@@ -51,7 +51,7 @@ if _G.bmd==true then
      wait(1)
      StarterGui:SetCore("SendNotification", {
           Title = "聊天翻译",
-          Text = "test",
+          Text = " ",
           Duration = 10,
           Button1 = "加载",
           Callback = ButtonClicked
