@@ -284,13 +284,13 @@ local properties = {
 
 game:GetService("StarterGui"):SetCore("SendNotification",
     {
-        Title = "Chat Translator",
-        Text = "Ported to Google Translate",
+        Title = "聊天翻译",
+        Text = "基于谷歌翻译",
         Duration = 3
     }
 )
                   
-properties.Text = "要用一种语言发送消息，请输入>，后面跟着目标语言/语言代码，例如:>ru或>russian。要禁用(返回原始语言)，请输入>d(Tong#9966汉化)"
+properties.Text = "要用一种语言发送消息，请输入>，后面跟着目标语言/语言代码，例如>ru或>russian。要禁用翻译(返回原始语言)，请输入>d"
 StarterGui:SetCore("ChatMakeSystemMessage", properties)
 
 function translateFrom(message)
@@ -442,8 +442,8 @@ end)
 
 local CoreGui = game:GetService("StarterGui") -- Variable of StarterGui
 CoreGui:SetCore("SendNotification", {
-    Title = "Tong#9966专属汉化",
-    Text = "鸡你太美🐔",
-    Icon ="rbxassetid://12053741096",
+    Title = "TongScript",
+    Text = "",
+    Icon ="rbxassetid://16042583196",
     Duration = 5, 
 })

@@ -40,6 +40,25 @@ if _G.bmd==true then
      wait(0.5)
      local date = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/更新日志.lua")
      loadstring(date)()
+
+     local StarterGui = game:GetService("StarterGui")
+     local ButtonClicked = Instance.new("BindableFunction")
+     ButtonClicked.Name = "ButtonClicked"
+     ButtonClicked.Parent = script.Parent
+     wait(1)
+     StarterGui:SetCore("SendNotification", {
+          Title = "聊天翻译",
+          Text = "test",
+          Duration = 10,
+          Button1 = "加载",
+          Callback = ButtonClicked
+      })
+      
+      ButtonClicked.OnInvoke = function(buttonText)
+           if buttonText == "加载" then
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/聊天翻译tong汉化.txt"))()
+          end
+      end
      
      else
 game.Players.LocalPlayer:Kick("未检测到白名单")
