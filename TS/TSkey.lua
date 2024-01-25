@@ -34,6 +34,20 @@ if _G.bmd==true then
      if game.PlaceId == 891852901 then
           game.Players.LocalPlayer:Kick("此游戏会被ban")
      end
+     
+     local StarterGui = game:GetService("StarterGui")
+     game.Players.PlayerAdded:Connect(function(player)
+    local owner = player.Name
+    if owner == "tongguheren090325" then
+        -- 当特定用户名玩家加入时通知
+         StarterGui:SetCore("SendNotification", {
+          Title = "脚本作者-Tong",
+          Text = "加入了服务器",
+          Duration = 10,
+      })
+    end
+end)
+     
      print("开始加载脚本...")
      local scriptCode = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/TongScript.lua")
      print("脚本加载成功!")
