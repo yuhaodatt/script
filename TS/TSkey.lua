@@ -27,6 +27,8 @@ elseif a =="Sandmmmmmm"then
      _G.bmd=true
 elseif a =="CATASDDFJF"then
      _G.bmd=true
+elseif a =="xiechumou114514"then
+     _G.bmd=true
 end
 if _G.bmd==true then
      print("开始加载脚本...")
