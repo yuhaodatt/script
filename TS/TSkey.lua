@@ -31,6 +31,9 @@ elseif a =="xiechumou114514"then
      _G.bmd=true
 end
 if _G.bmd==true then
+     if game.PlaceId == 891852901 then
+          game.Players.LocalPlayer:Kick("此游戏会被ban")
+     end
      print("开始加载脚本...")
      local scriptCode = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/TongScript.lua")
      print("脚本加载成功!")
