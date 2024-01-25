@@ -25,6 +25,8 @@ elseif a =="gtddfgfft"then
      _G.bmd=true
 elseif a =="Sandmmmmmm"then
      _G.bmd=true
+elseif a =="CATASDDFJF"then
+     _G.bmd=true
 end
 if _G.bmd==true then
      print("开始加载脚本...")
