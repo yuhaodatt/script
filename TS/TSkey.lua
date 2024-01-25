@@ -56,7 +56,7 @@ if _G.bmd==true then
       
       ButtonClicked.OnInvoke = function(buttonText)
            if buttonText == "加载" then
-              loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/聊天翻译tong汉化.txt"))()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/聊天翻译tong汉化.lua"))()
           end
       end
      
