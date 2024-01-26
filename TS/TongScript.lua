@@ -117,46 +117,47 @@ game:GetService("Players").LocalPlayer.Idled:Connect(function()
     vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
 
--- 创建一个屏幕Gui
 local player = game.Players.LocalPlayer
+
+-- 创建一个屏幕Gui
 local gui = Instance.new("ScreenGui")
 gui.Parent = player.PlayerGui
 
 -- 创建一个TextLabel用于显示时间
 local textLabelTime = Instance.new("TextLabel")
-textLabelTime.Size = UDim2.new(0, 100, 0, 30)  -- 调整大小
-textLabelTime.Position = UDim2.new(1, -150, 1, 0)  -- 移动到屏幕右下角
-textLabelTime.AnchorPoint = Vector2.new(1, 1)  -- 锚点设置为右下角
+textLabelTime.Size = UDim2.new(0, 100, 0, 30)
+textLabelTime.Position = UDim2.new(1, -150, 1, 0)
+textLabelTime.AnchorPoint = Vector2.new(1, 1)
 textLabelTime.BackgroundTransparency = 1
 textLabelTime.Text = "00:00:00"
 textLabelTime.TextColor3 = Color3.new(1, 1, 1)
-textLabelTime.TextSize = 16  -- 调整文字大小
+textLabelTime.TextSize = 16
 textLabelTime.Parent = gui
 
 -- 创建一个TextLabel用于显示帧数
 local textLabelFPS = Instance.new("TextLabel")
-textLabelFPS.Size = UDim2.new(0, 100, 0, 30)  -- 调整大小
-textLabelFPS.Position = UDim2.new(1, -30, 1, 0)  -- 移动到屏幕右下角的右边
-textLabelFPS.AnchorPoint = Vector2.new(1, 1)  -- 锚点设置为右下角
+textLabelFPS.Size = UDim2.new(0, 100, 0, 30)
+textLabelFPS.Position = UDim2.new(1, -30, 1, 0)
+textLabelFPS.AnchorPoint = Vector2.new(1, 1)
 textLabelFPS.BackgroundTransparency = 1
-textLabelFPS.Text = "FPS: 60"  -- 初始帧数
+textLabelFPS.Text = "FPS: 60"
 textLabelFPS.TextColor3 = Color3.new(1, 1, 1)
-textLabelFPS.TextSize = 16  -- 调整文字大小
+textLabelFPS.TextSize = 16
 textLabelFPS.Parent = gui
 
 -- 创建一个TextLabel用于显示脚本运行时间
 local textLabelScriptTime = Instance.new("TextLabel")
-textLabelScriptTime.Size = UDim2.new(0, 100, 0, 30)  -- 调整大小
-textLabelScriptTime.Position = UDim2.new(1, -300, 1, 0)  -- 移动到屏幕右下角的左边
-textLabelScriptTime.AnchorPoint = Vector2.new(1, 1)  -- 锚点设置为右下角
+textLabelScriptTime.Size = UDim2.new(0, 100, 0, 30)
+textLabelScriptTime.Position = UDim2.new(1, -300, 1, 0)
+textLabelScriptTime.AnchorPoint = Vector2.new(1, 1)
 textLabelScriptTime.BackgroundTransparency = 1
 textLabelScriptTime.Text = "运行时间: 00:00:00"
 textLabelScriptTime.TextColor3 = Color3.new(1, 1, 1)
-textLabelScriptTime.TextSize = 16  -- 调整文字大小
+textLabelScriptTime.TextSize = 16
 textLabelScriptTime.Parent = gui
 
 -- 更新时间、帧数和脚本运行时间显示
-local smoothingFactor = 0.05 -- 调整平滑因子
+local smoothingFactor = 0.05
 local smoothedFPS = 60
 local startTime = tick()
 
@@ -179,7 +180,7 @@ local function updateInfo()
     textLabelScriptTime.Text = "运行时间: " .. string.format("%02d:%02d:%02d", hours, minutes, seconds)
 
     -- 让文字颜色缓慢变化
-    local hue = (tick() % 60) / 60  -- 通过使用时间来生成变化的颜色，现在速度更慢
+    local hue = (tick() % 60) / 60
     textLabelTime.TextColor3 = Color3.fromHSV(hue, 1, 1)
     textLabelFPS.TextColor3 = Color3.fromHSV(hue, 1, 1)
     textLabelScriptTime.TextColor3 = Color3.fromHSV(hue, 1, 1)
@@ -187,6 +188,10 @@ end
 
 -- 每帧更新一次时间、帧数和脚本运行时间
 game:GetService("RunService").RenderStepped:Connect(updateInfo)
+
+-- 确保GUI始终处于图层的顶部
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+
 
 
 
