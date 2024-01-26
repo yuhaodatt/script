@@ -121,6 +121,7 @@ local player = game.Players.LocalPlayer
 
 -- 创建一个屏幕Gui
 local gui = Instance.new("ScreenGui")
+gui.ZIndex = 10
 gui.Parent = player.PlayerGui
 
 -- 创建一个TextLabel用于显示时间
