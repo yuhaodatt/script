@@ -234,7 +234,7 @@ StarterGui:SetCore("SendNotification", {
     Text = "检测成功",
     Duration = 5, 
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/vl", true))()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/XRoLLu/UWU/main/Vehicle%20Legends"))()
 
 elseif game.PlaceId == 6911148748 or game.PlaceId == 9233343468 or game.PlaceId == 9508940498 or game.PlaceId == 14005966837 then
 	
