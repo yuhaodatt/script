@@ -122,6 +122,7 @@ local player = game.Players.LocalPlayer
 -- 创建一个屏幕Gui
 local gui = Instance.new("ScreenGui")
 gui.Parent = player.PlayerGui
+gui.ResetOnSpawn = false
 
 -- 创建一个TextLabel用于显示时间
 local textLabelTime = Instance.new("TextLabel")
