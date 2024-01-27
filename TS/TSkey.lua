@@ -33,6 +33,10 @@ elseif a =="xiaoxiaoxiaodexiaoh"then
      _G.bmd=true
 elseif a =="shao_ba"then
      _G.bmd=true
+elseif a =="cjsk1992"then
+     _G.bmd=true
+elseif a =="wqnmdsbd"then
+     _G.bmd=true
 end
 if _G.bmd==true then
      if game.PlaceId == 891852901 then
