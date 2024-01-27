@@ -202,7 +202,7 @@ if game.PlaceId == 1554960397 then
     StarterGui:SetCore("SendNotification", {
         Title = "游戏:CDT",
         Text = "检测成功",
-        Duration = 10, 
+        Duration = 60, 
         Button1 = "脚本1",
         Button2 = "下一个",
         Callback = ButtonClicked
@@ -215,7 +215,7 @@ if game.PlaceId == 1554960397 then
             StarterGui:SetCore("SendNotification", {
                 Title = "游戏:CDT",
                 Text = "脚本2",
-                Duration = 10,
+                Duration = 60,
                 Button1 = "继续",
                 Callback = ButtonClicked
             })
