@@ -23,6 +23,7 @@ local whitelist = {
     "CNWU11",
     "Lyxsgsw",
     "hxw1145140",
+    "TXGtxgTXGtxgTXG",
 }
 
 local player = game.Players.LocalPlayer
