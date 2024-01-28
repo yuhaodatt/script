@@ -94,5 +94,5 @@ end)
       end
      
      else
-game.Players.LocalPlayer:Kick("未检测到白名单")
+game.Players.LocalPlayer:Kick("You have been banned from this game for cheating (where is your whitelist)")
 end
