@@ -41,6 +41,8 @@ elseif a =="Wwndjkda"then
      _G.bmd=true
 elseif a =="wqnmdsbd"then
      _G.bmd=true
+elseif a=="LYB158"then
+     _G.bmd=true
 end
 if _G.bmd==true then
      if game.PlaceId == 891852901 then
