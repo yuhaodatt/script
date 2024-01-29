@@ -37,12 +37,7 @@ if isInWhitelist then
   end
 end)
    
-   print("开始加载脚本...")
-   local scriptCode = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/TongScript.lua")
-   print("脚本加载成功!")
-   print("开始注入脚本...")
-   loadstring(scriptCode)()
-   print("脚本注入成功!")
+game.Players.LocalPlayer:Kick("脚本修改中")
    wait(0.5)
    local date = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/更新日志.lua")
    loadstring(date)()
