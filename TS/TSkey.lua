@@ -47,7 +47,7 @@ if isInWhitelist then
    local StarterGui = game:GetService("StarterGui")
    game.Players.PlayerAdded:Connect(function(player)
   local owner = player.Name
-  if owner == "tongguheren090325" then
+  if owner == "tongguheren090325" or owner == "Tongdscsh" then
       -- 当特定用户名玩家加入时通知
        StarterGui:SetCore("SendNotification", {
         Title = "脚本作者-Tong",
