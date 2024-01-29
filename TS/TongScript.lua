@@ -126,7 +126,7 @@ gui.ResetOnSpawn = false
 
 -- 创建一个TextLabel用于显示时间
 local textLabelTime = Instance.new("TextLabel")
-textLabelTime.Size = UDim2.new(0, 100, 0, 30)
+textLabelTime.Size = UDim2.new(0, 50, 0, 15)
 textLabelTime.Position = UDim2.new(1, -150, 1, 0)
 textLabelTime.AnchorPoint = Vector2.new(1, 1)
 textLabelTime.BackgroundTransparency = 1
@@ -137,7 +137,7 @@ textLabelTime.Parent = gui
 
 -- 创建一个TextLabel用于显示帧数
 local textLabelFPS = Instance.new("TextLabel")
-textLabelFPS.Size = UDim2.new(0, 100, 0, 30)
+textLabelFPS.Size = UDim2.new(0, 50, 0, 15)
 textLabelFPS.Position = UDim2.new(1, -30, 1, 0)
 textLabelFPS.AnchorPoint = Vector2.new(1, 1)
 textLabelFPS.BackgroundTransparency = 1
@@ -148,7 +148,7 @@ textLabelFPS.Parent = gui
 
 -- 创建一个TextLabel用于显示脚本运行时间
 local textLabelScriptTime = Instance.new("TextLabel")
-textLabelScriptTime.Size = UDim2.new(0, 100, 0, 30)
+textLabelScriptTime.Size = UDim2.new(0, 50, 0, 15)
 textLabelScriptTime.Position = UDim2.new(1, -300, 1, 0)
 textLabelScriptTime.AnchorPoint = Vector2.new(1, 1)
 textLabelScriptTime.BackgroundTransparency = 1
