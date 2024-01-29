@@ -252,7 +252,7 @@ StarterGui:SetCore("SendNotification", {
     Text = "检测成功",
     Duration = 5,
 })
-loadstring(game:HttpGet('https://ppearl.vercel.app'))()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/yuhaodatt/script/main/TS/ts%20de.lua'))()
 
 elseif game.PlaceId == 654732683 then
     StarterGui:SetCore("SendNotification", {
