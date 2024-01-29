@@ -22,7 +22,7 @@ local whitelist = {
     "LYsqsl",
     "CNWU11",
     "Lyxsgsw",
-    "hxw1145140",
+    "hxw114514",
     "TXGtxgTXGtxgTXG",
 }
 
