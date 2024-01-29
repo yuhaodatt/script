@@ -6,6 +6,8 @@ local whitelist = {
     "shao_ba",
     "zheng_hao298",
     "uiopwedf",
+    "ljx20121228xx",
+    "CH_xiaochen",
 }
 
 local player = game.Players.LocalPlayer
