@@ -204,7 +204,7 @@ if game.PlaceId == 1554960397 then
         Title = "游戏:CDT",
         Text = "检测成功",
         Duration = 60, 
-        Button1 = "脚本1",
+        Button1 = "脚本1(密钥)",
         Button2 = "下一个",
         Callback = ButtonClicked
     })
@@ -233,9 +233,15 @@ elseif game.PlaceId == 4566572536 then
 StarterGui:SetCore("SendNotification", {
     Title = "游戏:VL",
     Text = "检测成功",
-    Duration = 5, 
+    Duration = 5,
+    Button1 = "加载"
+    Cllback = ButtonClicked			
 })
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/XRoLLu/UWU/main/Vehicle%20Legends"))()
+	ButtonClicked.OnInvoke = function(innerButtonText)
+		if innerButtonText == "加载" then
+                     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/XRoLLu/UWU/main/Vehicle%20Legends"))()
+		end
+	end
 
 elseif game.PlaceId == 6911148748 or game.PlaceId == 9233343468 or game.PlaceId == 9508940498 or game.PlaceId == 14005966837 then
 	
