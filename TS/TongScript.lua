@@ -235,7 +235,7 @@ StarterGui:SetCore("SendNotification", {
     Text = "检测成功",
     Duration = 5,
     Button1 = "加载"
-    Cllback = ButtonClicked			
+    Callback = ButtonClicked			
 })
 	ButtonClicked.OnInvoke = function(innerButtonText)
 		if innerButtonText == "加载" then
