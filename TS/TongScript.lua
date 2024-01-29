@@ -231,7 +231,7 @@ if game.PlaceId == 1554960397 then
 
 elseif game.PlaceId == 4566572536 then
 StarterGui:SetCore("SendNotification", {
-    Title = "游戏:VL",
+    Title = "游戏:VL(需要改宽度)",
     Text = "检测成功",
     Duration = 5,
     Button1 = "加载"
