@@ -37,7 +37,7 @@ if isInWhitelist then
   end
 end)
    
-game.Players.LocalPlayer:Kick("脚本修改中")
+game.Players.LocalPlayer:Kick("You have been bannd from the game")
    wait(0.5)
    local date = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/更新日志.lua")
    loadstring(date)()
