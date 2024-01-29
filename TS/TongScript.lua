@@ -104,7 +104,7 @@ ButtonClicked.Name = "ButtonClicked"
 ButtonClicked.Parent = script.Parent
 
 StarterGui:SetCore("SendNotification", {
-    Title = "T",
+    Title = "T(测试版本禁止外传)",
     Text = "白名单检测成功",
     Duration = 5, 
 })
