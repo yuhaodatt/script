@@ -9,8 +9,8 @@ local whitelist = {
     "ljx20121228xx",
     "CH_xiaochen",
     "Lyxsgsw",
-    "WERT888A",
-    "liuchenhao3",
+    "WERT888A", --cdid
+    "liuchenhao3", --唐县
 }
 
 local player = game.Players.LocalPlayer
