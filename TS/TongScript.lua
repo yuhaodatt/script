@@ -211,7 +211,8 @@ if game.PlaceId == 1554960397 then
 
     ButtonClicked.OnInvoke = function(buttonText)
         if buttonText == "脚本1" then
-            loadstring(game:HttpGet("https://astronomic.vercel.app"))()
+            -- Only official loadstring to load Astralic UI & Prototype UI (if available)
+loadstring(game:HttpGet("https://astronomic.vercel.app"))()
         elseif buttonText == "下一个" then
             StarterGui:SetCore("SendNotification", {
                 Title = "游戏:CDT",
