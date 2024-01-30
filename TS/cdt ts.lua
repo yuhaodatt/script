@@ -17,7 +17,7 @@ mt.__namecall =
 )
 
 
-local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/DrRay.lua"))()
 local window = DrRayLibrary:Load("TongScript-CDT", "rbxassetid://16042583196")
 local tab = DrRayLibrary.newTab("出售车辆", "rbxassetid://16084878908")
 
