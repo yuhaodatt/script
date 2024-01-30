@@ -257,10 +257,32 @@ elseif game.PlaceId == 3351674303 then
 StarterGui:SetCore("SendNotification", {
     Title = "游戏:DE",
     Text = "检测成功",
-    Duration = 5,
+    Duration = 60,
+    Button1 = "加载",
+    Button2 = "下一个",
+    Callback = ButtonClicked
 })
-loadstring(game:HttpGet('https://raw.githubusercontent.com/yuhaodatt/script/main/TS/ts%20de.lua'))()
-
+ButtonClicked.OnInvoke = function(buttonText)
+		if buttonText == "加载" then
+			loadstring(game:HttpGet('https://ppearl.vercel.app'))()
+		elseif buttonText == "下一个" then
+			StarterGui:SetCore("SendNotification", {
+                Title = "游戏:DE",
+                Text = "脚本2",
+                Duration = 60,
+                Button1 = "继续",
+                Callback = ButtonClicked
+            })
+			   ButtonClicked.OnInvoke = function(innerButtonText)
+                if innerButtonText == "继续" then
+                    loadstring(game:HttpGet('https://raw.githubusercontent.com/yuhaodatt/script/main/TS/ts%20de.lua'))()
+                end
+            end
+        end
+    end
+			
+		
+	
 elseif game.PlaceId == 654732683 then
     StarterGui:SetCore("SendNotification", {
         Title = "游戏:CC2",
