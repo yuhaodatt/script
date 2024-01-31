@@ -11,6 +11,8 @@ local whitelist = {
     "Lyxsgsw",
     "WERT888A", --cdid
     "liuchenhao3", --唐县
+    "kuaishouyouyou",--cdt赛季
+    "jiiu014",--赛季
 }
 
 local player = game.Players.LocalPlayer
