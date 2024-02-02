@@ -210,7 +210,7 @@ if game.PlaceId == 1554960397 then
     })
 
     ButtonClicked.OnInvoke = function(buttonText)
-        if buttonText == "脚本1" then
+        if buttonText == "脚本1(密钥)" then
             -- Only official loadstring to load Astralic UI & Prototype UI (if available)
 loadstring(game:HttpGet("https://astronomic.vercel.app"))()
         elseif buttonText == "下一个" then
@@ -238,8 +238,8 @@ StarterGui:SetCore("SendNotification", {
     Button1 = "加载",
     Callback = ButtonClicked			
 })
-	ButtonClicked.OnInvoke = function(innerButtonText)
-		if innerButtonText == "加载" then
+	ButtonClicked.OnInvoke = function(ButtonText)
+		if ButtonText == "加载" then
                      loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/XRoLLu/UWU/main/Vehicle%20Legends"))()
 		end
 	end
@@ -249,9 +249,30 @@ elseif game.PlaceId == 6911148748 or game.PlaceId == 9233343468 or game.PlaceId 
 StarterGui:SetCore("SendNotification", {
     Title = "游戏:CDID",
     Text = "检测成功",
-    Duration = 5, 
+    Duration = 60,
+    Button1 = "加载",
+    Button2 = "下一个",
+    Callback = ButtonClicked,
 })
-loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub_premium.lua'))()
+ButtonClicked.OnInvoke = function(ButtonText)
+    if ButtonText == "加载" then
+        loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub_premium.lua'))()
+    elseif ButtonText == "下一个" then
+        StarterGui:SetCore("SendNotification",{
+            Title = "游戏:CDID",
+            Text = "脚本2",
+            Duration = 60,
+            Button1 = "继续",
+            Callback = ButtonClicked,
+        })
+
+        ButtonClicked.OnInvoke = function(innerButtonText)
+            if innerButtonText == "继续" then
+                loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/gratis/gantenghub_01.lua'))()
+            end
+            end
+        end
+    end
 
 elseif game.PlaceId == 3351674303 then
 StarterGui:SetCore("SendNotification", {
@@ -329,48 +350,4 @@ ButtonClicked.OnInvoke = function(buttonText)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/聊天翻译加密.lua"))()
     end
 end
-
---未改完
-coroutine.wrap(CGSLH_fake_script)()
-local function VIEO_fake_script() 
-	local script = Instance.new('LocalScript', CNM)
-
-	local CNM=script.Parent
-	local Mini=CNM.Mini
-	local Close=CNM.Close
-	local main=CNM.Mian
-	main.Visible=false
-	
-	Close.MouseButton1Click:Connect(function()
-		CNM.Parent:Destroy()
-	end)
-	main.Size=UDim2.new(1, 0,0.02, 0)
-	CNM.Active=true
-	CNM.Draggable=true
-	Mini.MouseButton1Click:Connect(function()
-		if main.Visible==false then
-			main.Visible=true
-			main:TweenSize(UDim2.new(1, 0,13.647, 0),"Out","Sine",0.15)
-		else
-			main:TweenSize(UDim2.new(1, 0,0.02, 0),"Out","Sine",0.15)
-			main.Visible=false
-		end
-	end)
 end
-coroutine.wrap(VIEO_fake_script)()
-game.Players.ChildAdded:Connect(function(player)
-    if not pcall (function()
-    SendNotification("玩家加入",""..player.Name.." 加入了游戏",5 )
-    end) then
-      print ("Error")
-    end
-    end)
-    SendNotification("欢迎",""..game.Players.LocalPlayer.Name.." WELCOME",10)
-    game.Players.ChildRemoved:Connect(function(player)
-        if not pcall (function()
-        SendNotification("玩家离开",""..player.Name.." 离开了游戏",4.4 )
-        end) then
-          print ("Error")
-        end
-        end) 
-    end
