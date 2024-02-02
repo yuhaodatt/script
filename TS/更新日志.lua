@@ -21,7 +21,7 @@ textLabel.TextColor3 = Color3.new(1, 1, 1) -- 文本颜色
 textLabel.Font = Enum.Font.SourceSansBold
 textLabel.FontSize = Enum.FontSize.Size24
 textLabel.TextWrapped = true
-textLabel.Text = "更新日志:更新de"
+textLabel.Text = "更新日志:更新cdid"
 textLabel.Parent = containerFrame
 
 -- 创建一个ImageButton作为关闭按钮
