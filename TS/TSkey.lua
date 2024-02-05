@@ -4,15 +4,9 @@ local whitelist = {
     "Chinarst3",
     "Sandmmmmmm",
     "shao_ba",
-    "zheng_hao298",
-    "uiopwedf",
     "ljx20121228xx",
     "CH_xiaochen",
-    "Lyxsgsw",
-    "WERT888A", --cdid
-    "liuchenhao3", --唐县
-    "kuaishouyouyou",--cdt赛季
-    "jiiu014",--赛季
+    "ljx52012",
 }
 
 local player = game.Players.LocalPlayer
