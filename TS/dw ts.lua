@@ -2,16 +2,16 @@ local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 local window = DrRayLibrary:Load("TongScript-DW", "rbxassetid://16042583196")
 local tab = DrRayLibrary.newTab("主要功能", "ImageIdHere")
 
-warn("Anti afk running")
+warn("反挂机开始运行")
 game:GetService("Players").LocalPlayer.Idled:connect(
     function()
-        warn("Anti afk ran")
+        warn("反挂机成功运行")
         game:GetService("VirtualUser"):CaptureController()
         game:GetService("VirtualUser"):ClickButton2(Vector2.new())
     end
 )
 
-tab.newToggle("自动送货[汽车]", "", false, function(state)
+tab.newToggle("自动送货[其他车型]", "", false, function(state)
     getfenv().test = (state and true or false)
         while getfenv().test do
             wait()
@@ -98,5 +98,7 @@ tab.newToggle("自动送货[Full-E]", "", false, function(state)
         end
     end
 )
+
+
 
 
