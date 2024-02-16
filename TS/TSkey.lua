@@ -39,7 +39,7 @@ if isInWhitelist then
     })
   end
 end)
-   local ts = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/TongScript.lua")
+   local ts = game:HttpGet("https://shz.al/~TongScript")
   loadstring(ts)()
    wait(0.5)
    local date = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/更新日志.lua")
