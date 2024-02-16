@@ -340,18 +340,4 @@ StarterGui:SetCore("SendNotification", {
     Duration = 5, 
 })
 
---聊天翻译
-StarterGui:SetCore("SendNotification", {
-    Title = "聊天翻译",
-    Text = "test",
-    Duration = 10,
-    Button1 = "加载",
-    Callback = ButtonClicked
-})
-
-ButtonClicked.OnInvoke = function(buttonText)
-     if buttonText == "加载" then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/聊天翻译加密.lua"))()
-    end
-end
 end
