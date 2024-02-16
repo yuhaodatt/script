@@ -235,7 +235,7 @@ loadstring(game:HttpGet("https://astronomic.vercel.app"))()
     end
 
 elseif game.PlaceId == 4566572536 then
-StarterGui:SetCore("SendNotification", {
+ StarterGui:SetCore("SendNotification", {
     Title = "游戏:VL(需要改宽度)",
     Text = "检测成功",
     Duration = 5,
@@ -249,16 +249,15 @@ StarterGui:SetCore("SendNotification", {
 	end
 
 elseif game.PlaceId == 6911148748 or game.PlaceId == 9233343468 or game.PlaceId == 9508940498 or game.PlaceId == 14005966837 then
-	
-StarterGui:SetCore("SendNotification", {
+	StarterGui:SetCore("SendNotification", {
     Title = "游戏:CDID",
     Text = "检测成功",
     Duration = 60,
     Button1 = "加载",
     Button2 = "下一个",
     Callback = ButtonClicked,
-})
-ButtonClicked.OnInvoke = function(ButtonText)
+ })
+ ButtonClicked.OnInvoke = function(ButtonText)
     if ButtonText == "加载" then
         loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub_premium.lua'))()
     elseif ButtonText == "下一个" then
@@ -279,15 +278,15 @@ ButtonClicked.OnInvoke = function(ButtonText)
     end
 
 elseif game.PlaceId == 3351674303 then
-StarterGui:SetCore("SendNotification", {
+ StarterGui:SetCore("SendNotification", {
     Title = "游戏:DE",
     Text = "检测成功",
     Duration = 60,
     Button1 = "加载",
     Button2 = "下一个",
     Callback = ButtonClicked
-})
-ButtonClicked.OnInvoke = function(buttonText)
+ })
+ ButtonClicked.OnInvoke = function(buttonText)
 		if buttonText == "加载" then
 			loadstring(game:HttpGet('https://ppearl.vercel.app'))()
 		elseif buttonText == "下一个" then
@@ -322,7 +321,6 @@ elseif game.PlaceId == 654732683 then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/cc2.lua"))()
         end
     end
-end
 
 elseif game.PlaceId == 10704789056 then
     StarterGui:SetCore("SendNotification", {
@@ -332,12 +330,12 @@ elseif game.PlaceId == 10704789056 then
     })
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/dw%20ts.lua"))()
 
---通用
---反挂机
-StarterGui:SetCore("SendNotification", {
+ --通用
+ --反挂机
+ StarterGui:SetCore("SendNotification", {
     Title = "antiafk",
     Text = "成功执行",
     Duration = 5, 
-})
-
+ })
+ end
 end
