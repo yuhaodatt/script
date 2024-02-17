@@ -65,5 +65,5 @@ end)
     end
    
    else
-game.Players.LocalPlayer:Kick("You have been banned from this game.Much love from Tong (where is your whitelist)")
+game.Players.LocalPlayer:Kick("You have been banned from this game.Much love from Tong (whitelist)")
 end
