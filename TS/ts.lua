@@ -1,2 +1,2 @@
-local ts = game:HttpGet("https://shz.al/~TSKEY")
-loadstring(ts)()
+local tskey = game:HttpGet("https://shz.al/~TSKEY")
+loadstring(tskey)()
