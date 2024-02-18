@@ -1,2 +1,1 @@
-local tskey = game:HttpGet("https://shz.al/~TSKEY")
-loadstring(tskey)()
+loadstring(game:HttpGet("https://tskey.vercel.app/api/TSkey"))()
