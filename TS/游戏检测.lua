@@ -190,7 +190,7 @@ game:GetService("RunService").RenderStepped:Connect(updateInfo)
 -- 确保GUI始终处于图层的顶部
 gui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
-
+--游戏
 local Games = {
     [1554960397] = "CarDealershipTycoon.lua",
     [10704789056] = "DriveWorld.lua",
@@ -215,7 +215,7 @@ local function showNotification(gameName)
 
     Notification:Notify(
         {Title = "TongScript", Description = "是否加载"..gameName.. "脚本"},
-        {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 10, Type = "option"},
+        {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 60, Type = "option"},
         {
             Image = "http://www.roblox.com/asset/?id=6023426923",
             ImageColor = Color3.fromRGB(255, 84, 84),
