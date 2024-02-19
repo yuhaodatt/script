@@ -1,3 +1,7 @@
+local NotificationHolder =
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
 local whitelist = {
     "tongguheren090325",
     "Tongdscsh",
@@ -22,6 +26,12 @@ for _, allowedName in ipairs(whitelist) do
 end
 
 if isInWhitelist then
+    Notification:Notify(
+    {Title = "TS(测试版本禁止外传)", Description = "检测白名单成功，正在加载"},
+    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 5, Type = "image"},
+    {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
+    )
+    wait(2.5)
     if game.PlaceId == 891852901 then
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
         return
@@ -33,44 +43,18 @@ if isInWhitelist then
             local owner = player.Name
             if owner == "tongguheren090325" or owner == "Tongdscsh" then
                 -- 当特定用户名玩家加入时通知
-                StarterGui:SetCore(
-                    "SendNotification",
-                    {
-                        Title = "脚本作者-Tong",
-                        Text = "加入了服务器",
-                        Duration = 10
-                    }
+                Notification:Notify(
+                {Title = "TS", Description = "TS作者-Tong进入了服务器"},
+                {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 5, Type = "image"},
+                {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
                 )
             end
         end
     )
-    local ts = game:HttpGet("https://shz.al/~TongScript")
-    loadstring(ts)()
+    loadstring(game:HttpGet("https://tongscript.vercel.app/api/TS-ff090325"))()
     wait(0.5)
     local date = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/更新日志.lua")
     loadstring(date)()
-
-    local StarterGui = game:GetService("StarterGui")
-    local ButtonClicked = Instance.new("BindableFunction")
-    ButtonClicked.Name = "ButtonClicked"
-    ButtonClicked.Parent = script.Parent
-    wait(1)
-    StarterGui:SetCore(
-        "SendNotification",
-        {
-            Title = "聊天翻译",
-            Text = " ",
-            Duration = 10,
-            Button1 = "加载",
-            Callback = ButtonClicked
-        }
-    )
-
-    ButtonClicked.OnInvoke = function(buttonText)
-        if buttonText == "加载" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/聊天翻译tong汉化.lua"))()
-        end
-    end
 else
     game.Players.LocalPlayer:Kick("You have been banned from this game.Much love from Tong (whitelist)")
 end

@@ -105,11 +105,6 @@ local ButtonClicked = Instance.new("BindableFunction")
 ButtonClicked.Name = "ButtonClicked"
 ButtonClicked.Parent = script.Parent
 
-StarterGui:SetCore("SendNotification", {
-    Title = "T(测试版本禁止外传)",
-    Text = "白名单检测成功",
-    Duration = 5, 
-})
 print("Anti Afk On")
 
 local vu = game:GetService("VirtualUser")
@@ -198,142 +193,46 @@ gui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
 
 
-wait(1)
 
--- 服务器
-if game.PlaceId == 1554960397 then
-    StarterGui:SetCore("SendNotification", {
-        Title = "游戏:CDT",
-        Text = "检测成功",
-        Duration = 60, 
-        Button1 = "脚本1(密钥)",
-        Button2 = "下一个",
-        Callback = ButtonClicked
-    })
 
-    ButtonClicked.OnInvoke = function(buttonText)
-        if buttonText == "脚本1(密钥)" then
-            -- Only official loadstring to load Astralic UI & Prototype UI (if available)
-loadstring(game:HttpGet("https://astronomic.vercel.app"))()
-        elseif buttonText == "下一个" then
-            StarterGui:SetCore("SendNotification", {
-                Title = "游戏:CDT",
-                Text = "脚本2",
-                Duration = 60,
-                Button1 = "继续",
-                Callback = ButtonClicked
-            })
+--游戏
+local Games = {
+    [1554960397] = "CarDealershipTycoon.lua",
+    [1] = "universal.lua"
+}
 
-            ButtonClicked.OnInvoke = function(innerButtonText)
-                if innerButtonText == "继续" then
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/cdt%20ts.lua", true))()
+local repo = "https://raw.githubusercontent.com/yuhaodatt/script/main/游戏/"
+local script = function() 
+    if Games[game.PlaceId] then
+        return game:HttpGet(repo..Games[game.PlaceId]) 
+    else
+        return game:HttpGet(repo..Games[1]) 
+    end 
+end
+
+-- Function to display notification
+local function showNotification()
+    local NotificationHolder =
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+    local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
+    Notification:Notify(
+        {Title = "TongScript", Description = "是否加载"},
+        {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 10, Type = "option"},
+        {
+            Image = "http://www.roblox.com/asset/?id=6023426923",
+            ImageColor = Color3.fromRGB(255, 84, 84),
+            Callback = function(State)
+                if State then
+                    wait(1)
+                    loadstring(script())()
+                else
+                    print(tostring(State))
                 end
             end
-        end
-    end
+        }
+    )
+end
 
-elseif game.PlaceId == 4566572536 then
- StarterGui:SetCore("SendNotification", {
-    Title = "游戏:VL(需要改宽度)",
-    Text = "检测成功",
-    Duration = 5,
-    Button1 = "加载",
-    Callback = ButtonClicked			
-})
-	ButtonClicked.OnInvoke = function(ButtonText)
-		if ButtonText == "加载" then
-                     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/XRoLLu/UWU/main/Vehicle%20Legends"))()
-		end
-	end
-
-elseif game.PlaceId == 6911148748 or game.PlaceId == 9233343468 or game.PlaceId == 9508940498 or game.PlaceId == 14005966837 then
-	StarterGui:SetCore("SendNotification", {
-    Title = "游戏:CDID",
-    Text = "检测成功",
-    Duration = 60,
-    Button1 = "加载",
-    Button2 = "下一个",
-    Callback = ButtonClicked,
- })
- ButtonClicked.OnInvoke = function(ButtonText)
-    if ButtonText == "加载" then
-        loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/premium/gantenghub_premium.lua'))()
-    elseif ButtonText == "下一个" then
-        StarterGui:SetCore("SendNotification",{
-            Title = "游戏:CDID",
-            Text = "脚本2",
-            Duration = 60,
-            Button1 = "继续",
-            Callback = ButtonClicked,
-        })
-
-        ButtonClicked.OnInvoke = function(innerButtonText)
-            if innerButtonText == "继续" then
-                loadstring(game:HttpGet('https://isnahamzahpastebin.tech/cdid/gratis/gantenghub_01.lua'))()
-            end
-            end
-        end
-    end
-
-elseif game.PlaceId == 3351674303 then
- StarterGui:SetCore("SendNotification", {
-    Title = "游戏:DE",
-    Text = "检测成功",
-    Duration = 60,
-    Button1 = "加载",
-    Button2 = "下一个",
-    Callback = ButtonClicked
- })
- ButtonClicked.OnInvoke = function(buttonText)
-		if buttonText == "加载" then
-			loadstring(game:HttpGet('https://ppearl.vercel.app'))()
-		elseif buttonText == "下一个" then
-			StarterGui:SetCore("SendNotification", {
-                Title = "游戏:DE",
-                Text = "脚本2",
-                Duration = 60,
-                Button1 = "继续",
-                Callback = ButtonClicked
-            })
-			   ButtonClicked.OnInvoke = function(innerButtonText)
-                if innerButtonText == "继续" then
-                    loadstring(game:HttpGet('https://raw.githubusercontent.com/yuhaodatt/script/main/TS/ts%20de.lua'))()
-                end
-            end
-        end
-    end
-			
-		
-	
-elseif game.PlaceId == 654732683 then
-    StarterGui:SetCore("SendNotification", {
-        Title = "游戏:CC2",
-        Text = "检测成功",
-        Duration = 10,
-        Button1 = "加载",
-        Callback = ButtonClicked
-    })
-
-    ButtonClicked.OnInvoke = function(buttonText)
-        if buttonText == "加载" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/cc2.lua"))()
-        end
-    end
-
-elseif game.PlaceId == 10704789056 then
-    StarterGui:SetCore("SendNotification", {
-        Title = "游戏:DW",
-        Text = "检测成功",
-        Duration = 5,
-    })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/dw%20ts.lua"))()
-
- --通用
- --反挂机
- StarterGui:SetCore("SendNotification", {
-    Title = "antiafk",
-    Text = "成功执行",
-    Duration = 5, 
- })
- end
-
+-- Invoke the notification without immediately running the script
+showNotification()
