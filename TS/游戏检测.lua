@@ -199,6 +199,7 @@ local Games = {
     [9508940498] = "CarDrivingIndonesia.lua",
     [14005966837] = "CarDrivingIndonesia.lua",
     [4566572536] = "VehicleLegends.lua",
+    [3351674303] = "DrivingEmpire.lua",
     [1] = "universal.lua"
 }
 
