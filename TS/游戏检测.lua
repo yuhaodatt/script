@@ -191,30 +191,30 @@ game:GetService("RunService").RenderStepped:Connect(updateInfo)
 gui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
 
---游戏
 local Games = {
     [1554960397] = "CarDealershipTycoon.lua",
     [10704789056] = "DriveWorld.lua",
+    [6911148748] = "CarDrivingIndonesia.lua",
+    [9233343468] = "CarDrivingIndonesia.lua",
+    [9508940498] = "CarDrivingIndonesia.lua",
+    [14005966837] = "CarDrivingIndonesia.lua",
     [1] = "universal.lua"
 }
 
 local repo = "https://raw.githubusercontent.com/yuhaodatt/script/main/游戏/"
+local scriptName = Games[game.PlaceId] or Games[1] -- 假假设默认 universal.lua 脚本
 local script = function() 
-    if Games[game.PlaceId] then
-        return game:HttpGet(repo..Games[game.PlaceId]) 
-    else
-        return game:HttpGet(repo..Games[1]) 
-    end 
+    return game:HttpGet(repo..scriptName)
 end
 
 -- Function to display notification
-local function showNotification()
+local function showNotification(gameName)
     local NotificationHolder =
         loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
     local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
     Notification:Notify(
-        {Title = "TongScript", Description = "是否加载"},
+        {Title = "TongScript", Description = "是否加载"..gameName.. "脚本"},
         {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 10, Type = "option"},
         {
             Image = "http://www.roblox.com/asset/?id=6023426923",
@@ -231,5 +231,10 @@ local function showNotification()
     )
 end
 
+-- Get the name from the Games table using game.PlaceId; if not found, use "universal.lua"
+local detectedGameName = Games[game.PlaceId] or "universal.lua"
+-- Remove file extension for display
+detectedGameName = string.gsub(detectedGameName, ".lua", "")
+
 -- Invoke the notification without immediately running the script
-showNotification()
+showNotification(detectedGameName)
