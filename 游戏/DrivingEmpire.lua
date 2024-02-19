@@ -20,7 +20,7 @@ Notification:Notify(
                         ImageColor = Color3.fromRGB(255, 84, 84),
                         Callback = function(State)
                             if State then
-                                PRINT("TSDE")
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/游戏/DE-TS.LUA",true))()
                             else
                                 print(tostring(State))
                             end
