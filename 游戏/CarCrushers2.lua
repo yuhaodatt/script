@@ -1,3 +1,18 @@
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("TS-CC2", "rbxassetid://16042583196")
+local tab = DrRayLibrary.newTab("主要功能", "")
+
+local toggleState = false
+
+tab.newToggle("自动破坏", "", toggleState, function(state)
+    toggleState = state
+    if toggleState then
+        print("开启")
+    else
+        print("关闭")
+    end
+end)
+
 -- services
 local players = game:GetService("Players")
 local rs = game:GetService("ReplicatedStorage")
@@ -13,17 +28,6 @@ local sp = workspace.Lobby.SpawnPoints.Spawn1
 local guiScript = getsenv(lp.PlayerGui:WaitForChild("GUIs"))
 local openFunc = guiScript["OpenDealership"]
 local spawnFunc = guiScript["SpawnButton"]
-
---开关
-local ui = Instance.new("ScreenGui")
-ui.Name = "ScriptControlUI"
-ui.Parent = lp.PlayerGui
-
-local button = Instance.new("TextButton")
-button.Text = "Start"
-button.Size = UDim2.new(0, 200, 0, 50)
-button.Position = UDim2.new(0.5, -100, 0, 10)
-button.Parent = ui
 
 -- functions
 local function getCurrentCar()
@@ -85,19 +89,15 @@ local function destroyCar()
 end
 
 -- main
-local isScriptRunning = false
-button.MouseButton1Click:Connect(function()
-    isScriptRunning = not isScriptRunning
-    button.Text = isScriptRunning and "Stop" or "Start"
-end)
-while runs.RenderStepped:Wait() do
-    if isScriptRunning then
+while task.wait() do
+    if toggleState then
         local character = getCharacter()
 
-        if not character then break end
+        if not character then return end
 
         if canSpawn() then
             spawnBestCar()
+            task.wait(1)
             destroyCar()
         end
     end
