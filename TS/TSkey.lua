@@ -38,7 +38,6 @@ if isInWhitelist then
         function(player)
             local owner = player.Name
             if owner == "tongguheren090325" or owner == "Tongdscsh" then
-                -- 当特定用户名玩家加入时通知
                 Notification:Notify(
                 {Title = "TS", Description = "TS作者-Tong进入了服务器"},
                 {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 5, Type = "image"},

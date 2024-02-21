@@ -105,18 +105,28 @@ LocalPlayer.Idled:Connect(
     end
 )
 
-
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/DrRay.lua"))()
 local window = DrRayLibrary:Load("TongScript-DE", "rbxassetid://16042583196")
 local tab = DrRayLibrary.newTab("主要功能", "ImageIdHere")
 
-tab.newToggle("刷钱", "", false, function(value)
-    AutoFarm = value
-    if value and not AutoFarmRunning then
-        coroutine.resume(AutoFarmFunc)
+tab.newToggle(
+    "刷钱",
+    "",
+    false,
+    function(value)
+        AutoFarm = value
+        if value and not AutoFarmRunning then
+            coroutine.resume(AutoFarmFunc)
+        end
     end
-end)
+)
 
-tab.newToggle("接触地面", "", false, function(value)
-    TouchTheRoad = value
-end)
+tab.newToggle(
+    "接触地面",
+    "",
+    false,
+    function(value)
+        TouchTheRoad = value
+    end
+)
+

@@ -235,10 +235,7 @@ local function showNotification(gameName)
     )
 end
 
--- Get the name from the Games table using game.PlaceId; if not found, use "universal.lua"
-local detectedGameName = Games[game.PlaceId] or "universal.lua"
--- Remove file extension for display
-detectedGameName = string.gsub(detectedGameName, ".lua", "")
 
--- Invoke the notification without immediately running the script
+local detectedGameName = Games[game.PlaceId] or "universal.lua"
+detectedGameName = string.gsub(detectedGameName, ".lua", "")
 showNotification(detectedGameName)

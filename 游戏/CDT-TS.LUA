@@ -16,13 +16,16 @@ mt.__namecall =
     end
 )
 
-
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/DrRay.lua"))()
 local window = DrRayLibrary:Load("TongScript-CDT", "rbxassetid://16042583196")
 local tab = DrRayLibrary.newTab("出售车辆", "rbxassetid://16084878908")
 
-tab.newToggle("自动卖车", "", false, function(state)
-    getfenv().Customer = (state and true or false)
+tab.newToggle(
+    "自动卖车",
+    "",
+    false,
+    function(state)
+        getfenv().Customer = (state and true or false)
         while getfenv().Customer do
             task.wait()
             pcall(
@@ -104,10 +107,15 @@ tab.newToggle("自动卖车", "", false, function(state)
                 end
             )
         end
-end)
+    end
+)
 
-tab.newToggle("自动送车", "", false, function(state)
-    getfenv().deliver = (state and true or false)
+tab.newToggle(
+    "自动送车",
+    "",
+    false,
+    function(state)
+        getfenv().deliver = (state and true or false)
         spawn(
             function()
                 while getfenv().deliver do
@@ -176,15 +184,17 @@ tab.newToggle("自动送车", "", false, function(state)
                 end
             )
         end
-end)
-
-
-
+    end
+)
 
 local tab = DrRayLibrary.newTab("经销店", "rbxassetid://16084916733")
 
-tab.newToggle("自动建店", "", false, function(state)
-    getfenv().buyer = (state and true or false)
+tab.newToggle(
+    "自动建店",
+    "",
+    false,
+    function(state)
+        getfenv().buyer = (state and true or false)
         while getfenv().buyer do
             task.wait()
             -- purchase buttons
@@ -208,23 +218,29 @@ tab.newToggle("自动建店", "", false, function(state)
                 end
             )
         end
-end)
+    end
+)
 
 local tab = DrRayLibrary.newTab("其他", "rbxassetid://16084948648")
 
-tab.newToggle("拦截弹窗", "", false, function(state)
-    getfenv().annoy = (state and true or false)
-    if getfenv().annoy == true then
-        -- annoying popup remover
-        getfenv().fun =
-            game:GetService("Players").LocalPlayer.PlayerGui.ChildAdded:Connect(
-            function(ok)
-                if ok.Name == "Popup2" then
-                    ok:Destroy()
+tab.newToggle(
+    "拦截弹窗",
+    "",
+    false,
+    function(state)
+        getfenv().annoy = (state and true or false)
+        if getfenv().annoy == true then
+            -- annoying popup remover
+            getfenv().fun =
+                game:GetService("Players").LocalPlayer.PlayerGui.ChildAdded:Connect(
+                function(ok)
+                    if ok.Name == "Popup2" then
+                        ok:Destroy()
+                    end
                 end
-            end
-        )
-    elseif getfenv().annoy == false then
-        getfenv().fun:Disconnect()
+            )
+        elseif getfenv().annoy == false then
+            getfenv().fun:Disconnect()
+        end
     end
-end)
+)
