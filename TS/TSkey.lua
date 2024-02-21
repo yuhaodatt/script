@@ -52,5 +52,5 @@ if isInWhitelist then
     local date = game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/更新日志.lua")
     loadstring(date)()
 else
-    game.Players.LocalPlayer:Kick("You have been banned from this game.Much love from Tong (whitelist)")
+    game.Players.LocalPlayer:Kick("You have been banned from this game.Much love from Tong.")
 end
