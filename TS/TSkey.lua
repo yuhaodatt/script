@@ -6,12 +6,7 @@ local whitelist = {
     "tongguheren090325",
     "Tongdscsh",
     "Chinarst3",
-    "Sandmmmmmm",
-    "shao_ba",
-    "ljx20121228xx",
     "CH_xiaochen",
-    "ljx52012",
-    "Shawn_050927"，
     "Penguin_5269",
 }
 
