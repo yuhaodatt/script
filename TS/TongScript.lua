@@ -202,6 +202,7 @@ local Games = {
     [3351674303] = "DrivingEmpire.lua",
     [654732683] = "CarCrushers2.lua",
     [4618049391] = "TangCountyHebei.lua",
+    [14475792710] = "DealershipTycoon.lua",
     [1] = "universal.lua"
 }
 
