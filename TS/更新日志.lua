@@ -3,7 +3,7 @@ local NotificationHolder =
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
 Notification:Notify(
-    {Title = "TS-更新日志", Description = "更新cc2/更新唐县蜜雪冰城"},
+    {Title = "TS-更新日志", Description = "更新cc2/更新唐县蜜雪冰城/添加DT"},
     {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 60, Type = "option"},
     {
         Image = "http://www.roblox.com/asset/?id=6023426923",
