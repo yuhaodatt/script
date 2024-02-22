@@ -2,6 +2,8 @@ local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 local window = DrRayLibrary:Load("TS-DT", "rbxassetid://16042583196")
 local tab = DrRayLibrary.newTab("主要功能", "")
 
+local RunService = game:GetService("RunService")
+
 local isAutoFarmEnabled = false
 local carModel = nil
 local position1 = Vector3.new(-320.0988464355469, -5.001976013183594, 2162.993408203125)
@@ -30,7 +32,6 @@ function releaseKey(key)
     keyrelease(code)
 end
 
-
 -- 查找车辆模型
 function findCarModel(carName)
     local carsFolder = game.Workspace.Cars
@@ -58,7 +59,6 @@ function checkCars(carName)
     carModel = nil
 end
 
-
 -- 传送函数
 local function teleportAllCars(position)
     local carsFolder = game.Workspace.Cars
@@ -75,7 +75,6 @@ local function teleportAllCars(position)
     end
 end
 
-
 -- 创建一次开关
 tab.newToggle(
     "autofarm",
@@ -91,10 +90,10 @@ tab.newToggle(
     end
 )
 
--- 主循环
--- 在主循环中
-while true do
+-- 连接到RunService的连接
+local connection
+connection = RunService.Heartbeat:Connect(function()
     if isAutoFarmEnabled then
         teleportAllCars(position1)
     end
-end
+end)
