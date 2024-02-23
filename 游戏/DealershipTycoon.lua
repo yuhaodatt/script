@@ -43,7 +43,7 @@ function findCarModel(carName)
     return nil
 end
 
--- 检测cars
+-- 检测车辆
 function checkCars(carName)
     local carsFolder = game.Workspace.Cars
     if carsFolder then
@@ -59,7 +59,7 @@ function checkCars(carName)
     carModel = nil
 end
 
--- 传送函数
+-- 传送
 local function teleportAllCars(position)
     local carsFolder = game.Workspace.Cars
     if carsFolder then
@@ -75,7 +75,6 @@ local function teleportAllCars(position)
     end
 end
 
--- 创建一次开关
 tab.newToggle(
     "autofarm",
     "所有车都传送过来是正常现象，别人不会受影响qwq",
@@ -90,7 +89,6 @@ tab.newToggle(
     end
 )
 
--- 连接到RunService的连接
 local connection
 connection = RunService.Heartbeat:Connect(function()
     if isAutoFarmEnabled then

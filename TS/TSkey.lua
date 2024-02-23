@@ -8,6 +8,7 @@ local whitelist = {
     "Chinarst3",
     "CH_xiaochen",
     "Penguin_5269",
+    "Tongdscsh2",
 }
 
 local player = game.Players.LocalPlayer
