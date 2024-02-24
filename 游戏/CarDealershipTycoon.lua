@@ -4,7 +4,7 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 Notification:Notify(
     {Title = "TS-CDT", Description = "🌺 Noradrenaline"},
-    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 60, Type = "option"},
+    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 120, Type = "option"},
     {
         Image = "http://www.roblox.com/asset/?id=6023426923",
         ImageColor = Color3.fromRGB(255, 84, 84),
@@ -14,7 +14,7 @@ Notification:Notify(
             else
                 Notification:Notify(
                     {Title = "TS-CDT", Description = "tscdt"},
-                    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 60, Type = "option"},
+                    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 120, Type = "option"},
                     {
                         Image = "http://www.roblox.com/asset/?id=6023426923",
                         ImageColor = Color3.fromRGB(255, 84, 84),
