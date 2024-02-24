@@ -3,7 +3,7 @@ local NotificationHolder =
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
 Notification:Notify(
-    {Title = "TS-DE", Description = "Pearl HUB"},
+    {Title = "TS-DE", Description = "Pearl HUB(按 X 切换下一个)"},
     {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 120, Type = "option"},
     {
         Image = "http://www.roblox.com/asset/?id=6023426923",
