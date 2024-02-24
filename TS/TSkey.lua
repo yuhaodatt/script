@@ -7,7 +7,6 @@ local whitelist = {
     "Tongdscsh",
     "Chinarst3",
     "CH_xiaochen",
-    "Penguin_5269",
     "Tongdscsh2",
     "shao_ba",
 }
