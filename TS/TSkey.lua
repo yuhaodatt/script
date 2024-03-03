@@ -58,7 +58,6 @@ if isInWhitelist or isInCustomer then
         return
     end
 
-    local StarterGui = game:GetService("StarterGui")
     game.Players.PlayerAdded:Connect(
         function(player)
             local owner = player.Name
