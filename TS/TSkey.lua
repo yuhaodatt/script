@@ -14,6 +14,7 @@ local whitelist = {
 local customerlist = {
     "dzqtdzct",
     "Limeile1223",
+    "zheng_hao298",
 }
 
 local player = game.Players.LocalPlayer
