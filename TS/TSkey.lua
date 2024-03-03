@@ -4,17 +4,22 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 local whitelist = {
     "tongguheren090325",
-    "Tongdscsh",
     "Chinarst3",
     "CH_xiaochen",
+    "Tongdscsh",
     "Tongdscsh2",
     "shao_ba",
-    "yyyyyyAE86c",
+}
+
+local customerlist = {
+    "dzqtdzct",
+    "Limeile1223",
 }
 
 local player = game.Players.LocalPlayer
 local playerName = player.Name
 local isInWhitelist = false
+local isInCustomer = false
 
 for _, allowedName in ipairs(whitelist) do
     if playerName == allowedName then
@@ -23,13 +28,31 @@ for _, allowedName in ipairs(whitelist) do
     end
 end
 
+for _, customerName in ipairs(customerlist) do
+    if playerName == customerName then
+        isInCustomer = true
+        break
+    end
+end
+
+if isInCustomer then
+    Notification:Notify(
+    {Title = "TS(测试版本禁止外传)", Description = "检测到客户名单，正在加载"},
+    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 5, Type = "image"},
+    {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
+)
+end
+
 if isInWhitelist then
     Notification:Notify(
     {Title = "TS(测试版本禁止外传)", Description = "检测白名单成功，正在加载"},
     {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 5, Type = "image"},
     {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
     )
-    wait(2.5)
+end
+
+if isInWhitelist or isInCustomer then
+    wait(0.5)
     if game.PlaceId == 891852901 then
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
         return
