@@ -40,6 +40,7 @@ function pressKey(key)
     end
 
     keypress(code)
+    wait(0.1)
 end
 
 function releaseKey(key)
@@ -50,6 +51,7 @@ function releaseKey(key)
     end
 
     keyrelease(code)
+    wait(0.1)
 end
 
 -- 检测物品栏是否有指定物品
@@ -70,9 +72,11 @@ end
 function checkAndPressKey(itemName, key)
     if checkInventoryForItem(itemName) then
         pressKey(key)
-        wait(0.1) -- 等待一段时间，可根据需要调整
+        wait(0.1)
         releaseKey(key)
+        return true
     end
+    return false
 end
 
 function teleportTo(targetPosition)
@@ -111,23 +115,28 @@ local function mainLoop(stateTable)
             task.wait(0.5)
 
             -- 送
-            local spawnNPC = workspace.MixueJob.Scripted.Line.SpawnedNPCs:FindFirstChildOfClass("Model")
-            local humanoidRootPart = spawnNPC and spawnNPC.HumanoidRootPart
-
-            while humanoidRootPart and not humanoidRootPart.PromptRemote do
-                task.wait(1)
-                workspace.MixueJob.Scripted.Prompts.Prompt.PromptRemote:FireServer()
-            end
-
-            if humanoidRootPart then
-                humanoidRootPart.PromptRemote:FireServer()
-            else
-                print("没有顾客")
+            local hasItem = checkInventoryForItem("Ice Cream Cone")
+            if hasItem then
+                for i = 1, 4 do
+                    if checkAndPressKey("Ice Cream Cone", tostring(i)) then
+                     local spawnNPC = workspace.MixueJob.Scripted.Line.SpawnedNPCs:FindFirstChildOfClass("Model")
+                     local humanoidRootPart = spawnNPC and spawnNPC.HumanoidRootPart
+                     while humanoidRootPart and not humanoidRootPart.PromptRemote do
+                        task.wait(1)
+                        workspace.MixueJob.Scripted.Prompts.Prompt.PromptRemote:FireServer()
+                     end
+                     wait(0.1)
+                     if humanoidRootPart then
+                        humanoidRootPart.PromptRemote:FireServer()
+                     else
+                        print("没有顾客")
+                     end
+                    end
+                end
+                task.wait(2)
             end
         end
-
-        task.wait(5)
+        task.wait(0.1)
     end
 end
-
 task.spawn(mainLoop, toggleState)
