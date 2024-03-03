@@ -126,7 +126,7 @@ local function mainLoop(stateTable)
             end
         end
 
-        task.wait(1)
+        task.wait(5)
     end
 end
 
