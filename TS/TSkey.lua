@@ -52,7 +52,7 @@ if isInWhitelist then
 end
 
 if isInWhitelist or isInCustomer then
-    wait(0.5)
+    wait(1)
     if game.PlaceId == 891852901 then
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
         return
