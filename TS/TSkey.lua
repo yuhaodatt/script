@@ -38,7 +38,7 @@ end
 
 if isInCustomer then
     Notification:Notify(
-    {Title = "TS(测试版本禁止外传)", Description = "检测到客户名单，正在加载"},
+    {Title = "TS(测试版本禁止外传)", Description = "检测到顾客名单，正在加载"},
     {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 5, Type = "image"},
     {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
 )
@@ -46,7 +46,7 @@ end
 
 if isInWhitelist then
     Notification:Notify(
-    {Title = "TS(测试版本禁止外传)", Description = "检测白名单成功，正在加载"},
+    {Title = "TS(测试版本禁止外传)", Description = "检测admin名单，正在加载"},
     {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 5, Type = "image"},
     {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84)}
     )
