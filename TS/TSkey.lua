@@ -14,7 +14,6 @@ local whitelist = {
 local customerlist = {
     "dgwxlc",--de 10m x
     "jshshjdsbhdidn",--de 10m x
-    "qpsuenf",--gv 700 牢大
     "qzs1004",--de 230m mi
     "kangjianm"--de 17m x
     
