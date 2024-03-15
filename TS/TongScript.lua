@@ -93,7 +93,7 @@ local function animateNotification()
     tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0)
     tween = game:GetService("TweenService"):Create(notificationFrame, tweenInfo, {Position = UDim2.new(0.5, -100, 1, -50)})
     tween:Play()
-    wait(1)--停止
+    wait(1)
     notificationGui:Destroy()
 end
 
@@ -207,12 +207,12 @@ local Games = {
 }
 
 local repo = "https://raw.githubusercontent.com/yuhaodatt/script/main/游戏/"
-local scriptName = Games[game.PlaceId] or Games[1] -- 假假设默认 universal.lua 脚本
+local scriptName = Games[game.PlaceId] or Games[1]
 local script = function() 
     return game:HttpGet(repo..scriptName)
 end
 
--- Function to display notification
+
 local function showNotification(gameName)
     local NotificationHolder =
         loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
