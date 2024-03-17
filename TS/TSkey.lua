@@ -13,8 +13,8 @@ local whitelist = {
 
 local customerlist = {
     "dgwxlc",--de 10m x 失踪
-    "jshshjdsbhdidn",--de 10m x
     "qzs1004",--de 230m mi
+    "CZH6J"-- gv 100 x
     
 }
 
