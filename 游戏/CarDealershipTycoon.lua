@@ -10,7 +10,7 @@ Notification:Notify(
         ImageColor = Color3.fromRGB(255, 84, 84),
         Callback = function(State)
             if State then
-                loadstring(game:HttpGet("https://astronomic.vercel.app"))()
+                loadstring(game:HttpGet("https://ahsrua.com"))()
             else
                 Notification:Notify(
                     {Title = "TS-CDT", Description = "tscdt"},
