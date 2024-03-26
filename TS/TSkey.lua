@@ -14,7 +14,6 @@ local whitelist = {
 local customerlist = {
     "qzs1004",--de ban mi
     "Hrhvfjdgdh",-- de 3000 chen
-    "cjsk1992",-- de 600 silent
 }
 
 local player = game.Players.LocalPlayer
