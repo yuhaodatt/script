@@ -12,7 +12,7 @@ local whitelist = {
 }
 
 local customerlist = {
-    "SF90l",
+    "plmqwertyuiosj",
     "ninimu555",--cdid ll 890
 }
 
