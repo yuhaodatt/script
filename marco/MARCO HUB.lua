@@ -4,6 +4,7 @@ local Games = {
     [4566572536] = "Vehicle legends",
     [3351674303] = "Driving empire",
     [14475792710] = "dealership tycoon",
+    [7305309231] = "Taxi Boss",
     [1] = "universal.lua",
 }
 
