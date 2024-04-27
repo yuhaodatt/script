@@ -24,7 +24,7 @@ local function showNotification(gameName)
 
     Notification:Notify(
         {Title = "Marco hub(Tong整合)", Description = "是否加载"..gameName.. "脚本"},
-        {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 120, Type = "option"},
+        {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 999, Type = "option"},
         {
             Image = "http://www.roblox.com/asset/?id=6023426923",
             ImageColor = Color3.fromRGB(255, 84, 84),

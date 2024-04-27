@@ -209,7 +209,7 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 Notification:Notify(
     {Title = "TS(按X切换)", Description = "是否加载TongScript"},
-    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 10, Type = "option"},
+    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 999, Type = "option"},
     {
         Image = "http://www.roblox.com/asset/?id=6023426923",
         ImageColor = Color3.fromRGB(255, 84, 84),
@@ -219,7 +219,7 @@ Notification:Notify(
             else
                 Notification:Notify(
                     {Title = "TS(按X切换)", Description = "是否加载Marco Hub"},
-                    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 10, Type = "option"},
+                    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 999, Type = "option"},
                     {
                         Image = "http://www.roblox.com/asset/?id=6023426923",
                         ImageColor = Color3.fromRGB(255, 84, 84),
