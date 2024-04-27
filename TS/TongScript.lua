@@ -1,20 +1,26 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/fps.lua"))()
 
 notificationGui = Instance.new("ScreenGui")
-notificationGui.Enabled = true  
-notificationGui.IgnoreGuiInset = true 
+notificationGui.Enabled = true
+notificationGui.IgnoreGuiInset = true
 
 local notificationFrame = Instance.new("Frame")
-notificationFrame.Size = UDim2.new(0, 200, 0, 50)--大小
+notificationFrame.Size = UDim2.new(0, 200, 0, 50)
+ --大小
 notificationFrame.Position = UDim2.new(0.5, -100, 1, -50) --位置
-notificationFrame.BackgroundColor3 = Color3.new(51/255, 51/255, 153/255)--背景颜色3
+notificationFrame.BackgroundColor3 = Color3.new(51 / 255, 51 / 255, 153 / 255)
+ --背景颜色3
 notificationFrame.Parent = notificationGui
 
 local notificationText = Instance.new("TextLabel")
-notificationText.Size = UDim2.new(1, 0, 1, 0)--大小
-notificationText.Position = UDim2.new(0, 0, 0, 0)--位置
-notificationText.BackgroundColor3 = Color3.new(51/255, 51/255, 153/255)--背景颜色3
-notificationText.TextColor3 = Color3.new(0, 0, 0)--文本颜色3
+notificationText.Size = UDim2.new(1, 0, 1, 0)
+ --大小
+notificationText.Position = UDim2.new(0, 0, 0, 0)
+ --位置
+notificationText.BackgroundColor3 = Color3.new(51 / 255, 51 / 255, 153 / 255)
+ --背景颜色3
+notificationText.TextColor3 = Color3.new(0, 0, 0)
+ --文本颜色3
 notificationText.Text = identifyexecutor()
 notificationText.Font = Enum.Font.SourceSansBold
 notificationText.FontSize = Enum.FontSize.Size24
@@ -83,15 +89,19 @@ tweenOut:Play()
 wait(1) -- 等待淡出动画完成
 screenGui:Destroy()
 
-
-
 local function animateNotification()
     local tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0)
-    local tween = game:GetService("TweenService"):Create(notificationFrame, tweenInfo, {Position = UDim2.new(0.5, -100, 0.8, -50)})
+    local tween =
+        game:GetService("TweenService"):Create(
+        notificationFrame,
+        tweenInfo,
+        {Position = UDim2.new(0.5, -100, 0.8, -50)}
+    )
     tween:Play()
     wait(3)
     tweenInfo = TweenInfo.new(1, Enum.EasingStyle.Quint, Enum.EasingDirection.Out, 0, false, 0)
-    tween = game:GetService("TweenService"):Create(notificationFrame, tweenInfo, {Position = UDim2.new(0.5, -100, 1, -50)})
+    tween =
+        game:GetService("TweenService"):Create(notificationFrame, tweenInfo, {Position = UDim2.new(0.5, -100, 1, -50)})
     tween:Play()
     wait(1)
     notificationGui:Destroy()
@@ -108,11 +118,13 @@ ButtonClicked.Parent = script.Parent
 print("Anti Afk On")
 
 local vu = game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:Connect(function()
-    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-    wait(1)
-    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-end)
+game:GetService("Players").LocalPlayer.Idled:Connect(
+    function()
+        vu:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+        wait(1)
+        vu:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+    end
+)
 
 local player = game.Players.LocalPlayer
 
@@ -164,7 +176,7 @@ local function updateInfo()
     local currentTime = os.date("*t")
     local formattedTime = string.format("%02d:%02d:%02d", currentTime.hour, currentTime.min, currentTime.sec)
     textLabelTime.Text = "" .. formattedTime
-    
+
     -- 更新帧数
     local currentFPS = math.floor(1 / game:GetService("RunService").RenderStepped:Wait())
     smoothedFPS = smoothedFPS * (1 - smoothingFactor) + currentFPS * smoothingFactor
@@ -190,24 +202,42 @@ game:GetService("RunService").RenderStepped:Connect(updateInfo)
 -- 确保GUI始终处于图层的顶部
 gui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 
-
 --hub
 local NotificationHolder =
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
 Notification:Notify(
-    {Title = "是否加载TongScript", Description = ""},
+    {Title = "TS(按X切换)", Description = "是否加载TongScript"},
     {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 10, Type = "option"},
     {
         Image = "http://www.roblox.com/asset/?id=6023426923",
         ImageColor = Color3.fromRGB(255, 84, 84),
         Callback = function(State)
             if State then
-                print("hello")
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TS/TongHub.lua"))()
             else
-                print(tostring(State))
+                Notification:Notify(
+                    {Title = "TS(按X切换)", Description = "是否加载Marco Hub"},
+                    {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 10, Type = "option"},
+                    {
+                        Image = "http://www.roblox.com/asset/?id=6023426923",
+                        ImageColor = Color3.fromRGB(255, 84, 84),
+                        Callback = function(State)
+                            if State then
+                                loadstring(
+                                    game:HttpGet(
+                                        "https://raw.githubusercontent.com/yuhaodatt/script/main/marco/MARCO%20HUB.lua"
+                                    )
+                                )()
+                            else
+                                print(tostring(State))
+                            end
+                        end
+                    }
+                )
             end
         end
     }
 )
+
