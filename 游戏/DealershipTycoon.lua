@@ -34,7 +34,7 @@ end
 
 -- 查找车辆模型
 function findCarModel(carName)
-    local carsFolder = game.Workspace.Cars
+    local carsFolder = game.Workspace.Vehicles
     for _, car in pairs(carsFolder:GetChildren()) do
         if car:IsA("Model") and car.Name == carName then
             return car
@@ -45,7 +45,7 @@ end
 
 -- 检测车辆
 function checkCars(carName)
-    local carsFolder = game.Workspace.Cars
+    local carsFolder = game.Workspace.Vehicles
     if carsFolder then
         for _, car in pairs(carsFolder:GetChildren()) do
             if car:IsA("Model") and car:FindFirstChild("VehicleSeat") and car.Name == carName then
@@ -61,7 +61,7 @@ end
 
 -- 传送
 local function teleportAllCars(position)
-    local carsFolder = game.Workspace.Cars
+    local carsFolder = game.Workspace.Vehicles
     if carsFolder then
         for _, car in pairs(carsFolder:GetChildren()) do
             if car:IsA("Model") and car:FindFirstChild("VehicleSeat") then
@@ -77,7 +77,7 @@ end
 
 tab.newToggle(
     "autofarm",
-    "所有车都传送过来是正常现象，别人不会受影响qwq",
+    "所有车都传送过来是正常现象，别人不会受影响",
     false,
     function(toggleState)
         isAutoFarmEnabled = toggleState
