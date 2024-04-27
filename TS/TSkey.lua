@@ -17,7 +17,6 @@ local customerlist = {
     "dzsdnjsa",--任务
     "gamesyahn",--cdt5000+赛季
     "caishenqi2",--de1100
-    "jondan316",--cdt 1
     "ahdjdkdbh",--de 1100
 }
 
