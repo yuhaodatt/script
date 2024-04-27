@@ -18,6 +18,7 @@ local customerlist = {
     "gamesyahn",--cdt5000+赛季
     "caishenqi2",--de1100
     "jondan316",--cdt 1
+    "ahdjdkdbh",--de 1100
 }
 
 local player = game.Players.LocalPlayer
