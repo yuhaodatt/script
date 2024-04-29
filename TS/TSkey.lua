@@ -15,7 +15,6 @@ local customerlist = {
     "plmqwertyuiosj",
     "Shualema",-- cdt 2 fan
     "dzsdnjsa",--任务
-    "caishenqi2",--de1100
     "yuan1234678",--de 一亿
 }
 
