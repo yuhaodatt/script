@@ -19,6 +19,7 @@ local customerlist = {
     "dzsdnjsa",--任务
     "yuan1234678",--de 一亿
     "liuhaicjami",--de 2000
+    "Lucenzous",--cdt 1.6
 }
 
 local player = game.Players.LocalPlayer
