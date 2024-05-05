@@ -10,6 +10,7 @@ local whitelist = {
     "Tongdscsh2",
     "shao_ba",
     "lapu004",
+    "cjsk1992",
 }
 
 local customerlist = {
