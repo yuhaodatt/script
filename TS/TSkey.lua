@@ -15,10 +15,8 @@ local whitelist = {
 
 local customerlist = {
     "plmqwertyuiosj",
-    "Shualema",-- cdt 2 fan
     "dzsdnjsa",--任务
     "yuan1234678",--de 一亿
-    "liuhaicjami",--de 2000
     "Lucenzous",--cdt 1.6
 }
 
