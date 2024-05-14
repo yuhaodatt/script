@@ -19,7 +19,6 @@ local customerlist = {
     "Lucenzous",--cdt 1.6
     "travelhaha",--唐县200
     "shixiao666",--cdid 1000
-    "HE200902",--cdt 2000奖杯
 }
 
 local player = game.Players.LocalPlayer
