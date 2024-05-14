@@ -5,12 +5,16 @@ local Games = {
     [3351674303] = "Driving empire",
     [14475792710] = "dealership tycoon",
     [7305309231] = "Taxi Boss",
+    [6911148748] = "cdid",
+    [9233343468] = "cdid",
+    [9508940498] = "cdid",
+    [14005966837] = "cdid",
     [1] = "universal.lua",
 }
 
 local repo = "https://raw.githubusercontent.com/Marco8642/science/main/"
 local scriptName = Games[game.PlaceId] or Games[1]
-local scriptNameEncoded = string.gsub(scriptName, " ", "%%20") -- 将空格替换为 %20
+local scriptNameEncoded = string.gsub(scriptName, " ", "%%20")
 local script = function() 
     return game:HttpGet(repo..scriptNameEncoded)
 end
