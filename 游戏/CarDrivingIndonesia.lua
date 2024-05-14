@@ -10,7 +10,7 @@ Notification:Notify(
         ImageColor = Color3.fromRGB(255, 84, 84),
         Callback = function(State)
             if State then
-                loadstring(game:HttpGet('https://www.github.com/Marco8643/test/main/cdid'))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Marco8643/test/main/cdid"))()
             else
                 Notification:Notify(
                     {Title = "TS-CDID", Description = "Ganteng Hub"},
