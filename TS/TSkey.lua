@@ -4,17 +4,10 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
 local whitelist = {
     "tongguheren090325",
-    "Chinarst3",
-    "CH_xiaochen",
-    "tongds_cdt",
     "shao_ba",
-    "lapu004",
-    "cjsk1992",
 }
 
 local customerlist = {
-    "plmqwertyuiosj",
-    "dzsdnjsa",--任务
     "yuan1234678",--de 一亿 
     "Lucenzous",--cdt 1.6
     "travelhaha",--唐县200
