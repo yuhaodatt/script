@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://tskey.vercel.app/api/TSkey"))()
+loadstring(game:HttpGet("https://tskey.vercel.app/api/TongScript"))()
