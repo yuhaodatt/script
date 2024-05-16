@@ -2,7 +2,7 @@ local Games = {
     [4618049391] = "TangCountyHebei.lua",
 }
 
-local repo = "https://raw.githubusercontent.com/yuhaodatt/script/main/游戏/"
+local repo = "https://raw.githubusercontent.com/TongScriptX/TongScript/main/"
 local scriptName = Games[game.PlaceId] or Games[1]
 local script = function() 
     return game:HttpGet(repo..scriptName)
