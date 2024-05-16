@@ -61,8 +61,6 @@ if isInWhitelist or isInCustomer then
         end
     )
     loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TX/TXgames.lua"))()
-    wait(0.5)
-    print("Hello,World")
 else
     game.Players.LocalPlayer:Kick("未检测到白名单")
 end
