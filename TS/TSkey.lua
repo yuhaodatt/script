@@ -5,6 +5,7 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 local whitelist = {
     "tongguheren090325",
     "shao_ba",
+    "lapu004",
 }
 
 local customerlist = {
