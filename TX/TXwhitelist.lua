@@ -60,7 +60,7 @@ if isInWhitelist or isInCustomer then
             end
         end
     )
-    print("Hello World")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TX/TXgames.lua"))()
     wait(0.5)
     print("Hello,World")
 else
