@@ -1,5 +1,6 @@
 local Games = {
     [4618049391] = "TangCountyHebei.lua",
+    [1] = "universal.lua",
 }
 
 local repo = "https://raw.githubusercontent.com/TongScriptX/TongScript/main/"
