@@ -4,7 +4,7 @@ local NotificationHolder =
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
 Notification:Notify(
-    {Title = "等待脚本迁移", Description = "联系961308752"},
+    {Title = "完成迁移", Description = "联系961308752"},
     {OutlineColor = Color3.fromRGB(80, 80, 80), Time = 10, Type = "option"},
     {
         Image = "http://www.roblox.com/asset/?id=6023426923",
