@@ -11,7 +11,6 @@ local whitelist = {
 local customerlist = {
     "yuan1234678",--de 一亿已付款 
     "Lucenzous",--cdt 1.6已付款
-    "MCDream_2022",--活动已付款
     "hdjwjjzjjwj",--gv 100已付款
     "jondan316"--dt 5已付款
 }
