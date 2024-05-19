@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/yuhaodatt/script/main/TX/TXwhitelist.lua"))()
+loadstring(game:HttpGet("https://tongscriptx.vercel.app/api/TongScriptX"))()
