@@ -1,5 +1,6 @@
 local Games = {
     [4618049391] = "TangCountyHebei.lua",
+    [3623096087] = "MuscleLegends.lua",
     [1] = "universal.lua",
 }
 
