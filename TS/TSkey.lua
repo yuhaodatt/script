@@ -13,6 +13,7 @@ local customerlist = {
     "jondan316",--dt 5已付款
     "dragon998245",--tang 200
     "h_h5622",--de 2000定金
+    "xxbudjf",--de 2000付款
 }
 
 local player = game.Players.LocalPlayer
