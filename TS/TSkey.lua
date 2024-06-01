@@ -10,8 +10,8 @@ local whitelist = {
 
 local customerlist = {
     "Lucenzous",--cdt 1.6已付款
-    "jondan316",--dt 5已付款
-    "dragon998245",--tang 200
+    "jondan316",--dt 10已付款
+    "MCDream_2022",--奖杯
     "h_h5622",--de 2000定金
     "xxbudjf",--de 2000付款
 }
