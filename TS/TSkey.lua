@@ -12,7 +12,6 @@ local customerlist = {
     "Lucenzous",--cdt 1.6已付款
     "jondan316",--dt 10已付款
     "h_h5622",--de 2000定金
-    "xxbudjf",--de 2000付款
     "nanERDaa",--de 1000
 }
 
