@@ -6,13 +6,11 @@ local whitelist = {
     "tongguheren090325",
     "shao_ba",
     "lapu004",
-    "CYZChai",
 }
 
 local customerlist = {
     "Lucenzous",--cdt 1.6已付款
-    "jondan316",--dt 3
-    "weiting444",--5奖杯
+    "weiting444",--5奖杯--money
 }
 
 local player = game.Players.LocalPlayer
