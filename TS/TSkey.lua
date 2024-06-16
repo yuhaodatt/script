@@ -10,7 +10,7 @@ local whitelist = {
 
 local customerlist = {
     "Lucenzous",--cdt 1.6已付款
-    "weiting444",--5奖杯--money
+    "hdhjd3838",
 }
 
 local player = game.Players.LocalPlayer
